@@ -1,0 +1,208 @@
+ROWS: 5
+TITLE: "&8Gang Levels"
+USE-SKULL-TEXTURES: true
+LORE_OUTCOMES:
+  pass: '&aYou have completed this level.'
+  fail: '&cYou have not unlocked this level.'
+ITEMS: #item name must be the id of the level
+  1:
+    SLOT: 11
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&a&lLevel 1'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/e0a4c94dd65a7cadc4172cedf3990a8542772bb113cdf1a0f78ef652c6abe6cb'
+    LORE:
+      - '&fThis level is unlocked by default, upgrade'
+      - '&fyour gang level to unlock different perks.'
+  2:
+    SLOT: 12
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&5&lLevel 2'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/a47c55064f1d07625af05cdbc0fc7c84173b10541024c8855ed7132ca7767246'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&5Requirements:'
+      - '&d| &fBlocks Mined: &d1k'
+      - '&d| &fPlayer Kills: &d5'
+      - ''
+      - '&5Unlocks:'
+      - '&d| &f10x Gang Coins'
+      - ''
+      - '%lore_outcome%'
+  3:
+    SLOT: 13
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&3&lLevel 3'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/d9cb94d8729197a18a76882c24918a8c04494d34727f4df060fb7a45a1ff8537'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&3Requirements:'
+      - '&b| &fBlocks Mined: &b25k'
+      - '&b| &fPlayer Kills: &b25'
+      - ''
+      - '&3Unlocks:'
+      - '&b| &f4x Member Limit'
+      - '&b| &f15x Gang Coins'
+      - ''
+      - '%lore_outcome%'
+  4:
+    SLOT: 14
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&6&lLevel 4'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/36ad7565fa68942d2ff5f04efda80d9e9f88d33401680f182e0f37af32b8c294'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&6Requirements:'
+      - '&e| &fBlocks Mined: &e150k'
+      - '&e| &fPlayer Kills: &e100'
+      - '&e| &fGang Points: &e50'
+      - ''
+      - '&6Unlocks:'
+      - '&e| &cC&6o&el&ao&3u&9r&5e&cd &fGang Description'
+      - '&e| &f15x Gang Coins'
+      - '&e| &f10x Gang Points'
+      - ''
+      - '%lore_outcome%'
+  5:
+    SLOT: 15
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&9&lLevel 5'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/d0203b124acefd08c446a0492a5c9d800ee0cd8c260c3c12377731659251ad4e'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&9Requirements:'
+      - '&b| &fBlocks Mined: &b350k'
+      - '&b| &fPlayer Kills: &b250'
+      - '&b| &fGang Points: &b100'
+      - ''
+      - '&9Unlocks:'
+      - '&b| &f5% Gang Shop Discount'
+      - '&b| &f20x Gang Coins'
+      - '&b| &f10x Gang Points'
+      - ''
+      - '%lore_outcome%'
+  6:
+    SLOT: 20
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&d&lLevel 6'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/e491017fd5267fc9a641cce0250d4683804e3b1399b2b5b58f130f5774de2821'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&5Requirements:'
+      - '&d| &fBlocks Mined: &d750k'
+      - '&d| &fPlayer Kills: &d350'
+      - '&d| &fGang Points: &d200'
+      - ''
+      - '&5Unlocks:'
+      - '&d| &f5x Member Limit'
+      - '&d| &f15x Gang Coins'
+      - '&d| &f10x Gang Points'
+      - ''
+      - '%lore_outcome%'
+  7:
+    SLOT: 21
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&c&lLevel 7'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/8425acc42caf8b1e95ccb16d379af0b76f95ed29ef2a494073d0b07b15dc22fd'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&4Requirements:'
+      - '&c| &fBlocks Mined: &c1.5M'
+      - '&c| &fPlayer Kills: &c500'
+      - ''
+      - '&4Unlocks:'
+      - '&c| &f2x Ally Limit'
+      - '&c| &f35x Gang Coins'
+      - '&c| &f15x Gang Points'
+      - ''
+      - '%lore_outcome%'
+  8:
+    SLOT: 22
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&5&lLevel 8'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/b4904d5dee3782d4d6c6febe72783d96148277efbe78c1514cc20088d8ff0d09'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&5Requirements:'
+      - '&d| &fBlocks Mined: &d2M'
+      - '&d| &fPlayer Kills: &d750'
+      - '&d| &fGang Points: &d250'
+      - ''
+      - '&5Unlocks:'
+      - '&d| &f5x Member Limit'
+      - '&d| &f30x Gang Coins'
+      - '&d| &f20x Gang Points'
+      - ''
+      - '%lore_outcome%'
+  9:
+    SLOT: 23
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&b&lLevel 9'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/6adc65c3b896ab66df1ed7ba4250d16bb8352a6d285a54c00218ea72a4bb7149'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&bRequirements:'
+      - '&9| &fBlocks Mined: &92.5M'
+      - '&9| &fPlayer Kills: &91k'
+      - ''
+      - '&bUnlocks:'
+      - '&9| &f5% Coin Multiplier'
+      - '&9| &f30x Gang Coins'
+      - '&9| &f20x Gang Points'
+      - ''
+      - '%lore_outcome%'
+  10:
+    SLOT: 24
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&3&lLevel 10'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/abd267503356c851f739556847575b5e338814a73b3ae8abc65ae40cf16cc333'
+    LORE:
+      - '&fProgress through gang levels to upgrade your gang.'
+      - ''
+      - '&3Requirements:'
+      - '&b| &fBlocks Mined: &b3.5M'
+      - '&b| &fPlayer Kills: &b2.5k'
+      - '&b| &fGang Points: &b350'
+      - ''
+      - '&3Unlocks:'
+      - '&b| &f3x Gang Allies'
+      - '&b| &f6x Member Limit'
+      - '&b| &f100x Gang Coins'
+      - '&b| &f50x Gang Points'
+      - ''
+      - '%lore_outcome%'
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 40
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false

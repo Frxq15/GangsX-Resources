@@ -1,0 +1,138 @@
+# Gang Schedules Menu Configuration
+# This menu displays upcoming KoTH and Tournament events with live updating placeholders
+# There is also full PlaceholderAPI support for custom placeholders
+#
+# Item Types:
+#   KOTH: 'koth_id'         - Displays KoTH information for the specified koth ID
+#   TOURNAMENT: 'type'      - Displays Tournament information (MINING, KILLS, or CURRENCY_GAINED subtypes like 'tokens')
+#
+# Available KoTH Placeholders (update every second):
+#   %status%                - Current status (Active/Inactive/Disabled/Not Found)
+#   %capture_time%          - Total time required to capture
+#   %current_capture_time%  - Current capture progress
+#   %remaining_capture_time% - Time remaining to capture
+#   %controlling_gang_display% - Display name of gang currently capping
+#   %controlling_gang%      - Name of gang currently capping
+#   %x%                     - Center X coordinate
+#   %z%                     - Center Z coordinate
+#   %world%                 - World name
+#   %time_until_start%      - Time until next scheduled start
+#
+# Available Tournament Placeholders (update every second):
+#   %status%                - Current status (Active/Inactive/Disabled/Invalid Type)
+#   %leading_gang_display%  - Display name of leading gang
+#   %leading_gang%          - Name of leading gang
+#   %leading_gang_score%    - Score of leading gang
+#   %time_until_start%      - Time until next scheduled start
+#   %time_remaining%        - Time remaining in active tournament
+#
+# Click Commands:
+#   [player] command        - Run command as player
+#   [console] command       - Run command as console
+#   [close]                 - Close the inventory
+
+ROWS: 4
+TITLE: "&8Gang Schedules"
+
+ITEMS:
+  KOTH_EXAMPLE:
+    KOTH: 'example'
+    SLOT: 10
+    USE-TEXTURE: true
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/f245896e07fcd511b632c477b1aa8ac59488cc44cc22362540a65e9e312a4af9'
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    NAME: "&d&lExample KoTH"
+    GLOW: false
+    LORE:
+      - '&fKoTHs are scheduled events where gangs can compete'
+      - '&ffor control of a specific area. &aWinning &fa KoTH grants'
+      - '&fyour gang valuable rewards and currency.'
+      - ''
+      - '&5Information:'
+      - '&5&l | &fStatus: &d%status%'
+      - '&5&l | &fCapture Time: &d%capture_time%'
+      - '&5&l | &fControlled By: &d%controlling_gang%'
+      - ''
+      - '&5Location:'
+      - '&5&l | &fX: &d%x% &f| Z: &d%z%'
+      - ''
+      - '&5Schedule:'
+      - '&5&l | &fStarts In: &d%time_until_start%'
+      - ''
+      - '&5Rewards:'
+      - '&5&l • &dGang Points'
+      - '&5&l • &6Gang Coins'
+      - '&5&l • &cCrate Keys'
+      - ''
+      - '&eClick to visit the pvp arena'
+    CLICK_COMMANDS:
+      - '[player] warp pvp'
+
+  TOURNAMENT_MINING:
+    TOURNAMENT: 'mining'
+    SLOT: 13
+    USE-TEXTURE: true
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/e0a106fe9041a858ccf4140bbb9db6c2af3b52592613a74d08afc6ed6baa411a'
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    NAME: "&e&lMining Tournament"
+    GLOW: false
+    LORE:
+      - '&fTournaments are scheduled events where gangs can compete'
+      - '&fto gain the highest score in a specific activity. &dEarning &fa'
+      - '&fvariety of different rewards.'
+      - ''
+      - '&6Information:'
+      - '&6&l | &fStatus: &e%status%'
+      - '&6&l | &fCurrent Leader: &e%leading_gang% &7(%leading_gang_score% Blocks)'
+      - '&6&l | &fTime Remaining: &e%time_remaining%'
+      - ''
+      - '&6Schedule:'
+      - '&6&l | &fStarts In: &e%time_until_start%'
+      - ''
+      - '&6Rewards:'
+      - '&e&l • &dGang Points'
+      - '&e&l • &bBoosters'
+      - '&e&l • &cCrate Keys'
+      - ''
+      - '&eThe top 3 gangs will receive rewards.'
+    CLICK_COMMANDS: []
+
+  TOURNAMENT_KILLS:
+    TOURNAMENT: 'kills'
+    SLOT: 16
+    USE-TEXTURE: true
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/fea57e9ed9af86ef785efd50ff68422ceafe99dd203f511c0b159b617e921019'
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    NAME: "&c&lKills Tournament"
+    GLOW: false
+    LORE:
+      - '&fCompete with your gang to get the most kills'
+      - '&fduring the tournament period.'
+      - ''
+      - '&4Information:'
+      - '&4&l| &fStatus: &c%status%'
+      - '&4&l| &fCurrent Leader: &c%leading_gang% &7(%leading_gang_score% Kills)'
+      - '&4&l| &fTime Remaining: &c%time_remaining%'
+      - ''
+      - '&4Schedule:'
+      - '&4&l| &fStarts In: &c%time_until_start%'
+      - ''
+      - '&4Rewards:'
+      - '&4&l • &dGang Points'
+      - '&4&l • &6Gang Coins'
+      - '&4&l • &aArmor Sets'
+      - ''
+      - '&eThe top 3 gangs will receive rewards.'
+    CLICK_COMMANDS: []
+
+MISC_ITEMS:
+  CLOSE_MENU:
+    SLOT: 31
+    GLOW: false
+    AMOUNT: 1
+    NAME: '&cExit'
+    LORE: []
+    MATERIAL: 'ARROW'

@@ -1,0 +1,42 @@
+ROWS: 4
+TITLE: "&8Gang Quests"
+
+DISPLAY_SLOTS: #will hook into how many quests are assigned, and not use unused slots, for example 1: 11 = quest 1 will be in slot 11
+  DAILY:
+    1: 11
+    2: 15
+    3: 3
+    4: 4
+    5: 5
+  WEEKLY:
+    1: 13
+    2: 22
+    3: 1
+    4: 2
+
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 32
+    GLOW: false
+    AMOUNT: 1
+    NAME: '&cExit'
+    LORE: []
+    MATERIAL: ARROW
+  time: #keep this as time and clicking it will refresh the timer
+    SLOT: 30
+    MATERIAL: "WRITABLE_BOOK"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&6Quests Information'
+    LORE:
+      - '&fSee all of the information about gang quests.'
+      - ''
+      - '&6Daily:'
+      - '&e&l | &fUpdated: &eDaily &7(15:00pm)'
+      - '&e&l | &fNext Update: &e%daily%'
+      - ''
+      - '&6Weekly:'
+      - '&e&l | &fUpdated: &eFriday &7(17:00pm)'
+      - '&e&l | &fNext Update: &e%weekly%'
+      - ''
+      - '&eQuest rewards are automatically applied.'

@@ -1,0 +1,300 @@
+# The levelup system can be defined as either 'v1' or 'v2'
+# v1 - Using this system will enable the /g levelup command where it is a manual process for the gang to levelup,
+# you are able to define any gang statistic as a requirement if you are using this system.
+# v2 - Using this system the /g levelup command will not be registered, instead the levelups will become automatic based on the blocksmined
+# by the gang, you are able to define specific level rewards and increase the difficulty.
+system: 'v1'
+max-level: 100
+
+sound: # Sound played when a gang levels up
+  enabled: true
+  effect: 'ENTITY_PLAYER_LEVELUP' # Set to NONE and it will disable the sound
+
+# Levelup system v2 configuration
+
+#NOTE: V2 is a new system that is not compatible with V1, if you are using V2 you will not be able to use the /g levelup command.
+# The levelup system will automatically levelup the gang based on the blocksmined.
+v2:
+  starting-requirement: 1000 #gangs are level 1 by default, this is the starting requirement for level 2
+  increase-requirement-by: 1000
+  difficulty-requirements:
+    enabled: true
+    levels:
+      10: 1500 #example: Level 9 requires 8,000 blocks, with this level 10 is 9,000 (previous level) + 1,000 (increase) + 1,500 (bonus) = 11,500
+      20: 3500
+      30: 5500
+      40: 7500
+      50: 9500
+      75: 13500
+      100: 16500
+  rewards:
+    for-each:
+      message:
+        enabled: true
+        message:
+          - ''
+          - '&a&lGang Levelup &8- &e&lLevel %level%'
+          - '&fCongrats on leveling up, you have unlocked:'
+          - ''
+          - '&e&l • &f5x Gang Coins'
+          - ''
+      commands:
+        enabled: true
+        commands:
+          - 'gadmin addstat %gang% coins 5'
+    for-specific:
+      '10':
+        message:
+          enabled: true
+          message:
+           - ''
+           - '&a&lGang Levelup &8- &d&lLevel 10'
+           - '&fCongrats on leveling up, you have unlocked:'
+           - ''
+           - '&d&l • &f10x Gang Coins'
+           - ''
+        commands:
+          enabled: true
+          commands:
+            - 'gadmin addstat %gang% coins 10'
+
+
+# Levelup system v1 configuration
+
+#NOTE: V1 is the old system that is not compatible with V2, if you are using V1 you will not be able to use the automatic levelup system.
+# The levelup system will require the gang to manually levelup using the /g levelup command.
+# You can define any statistic as a requirement for the levelup, you can also define a message to be sent to the player when they fail to levelup.
+
+v1:
+  2:
+    requirements:
+      #You can use any of the following statistics as requirements:
+      # coins, bankbalance, kills, deaths, blocksmined, blocksplaced, kothwins, bosskills, mobkills, tokens_gained, points or custom statistics
+      blocksmined: 1000
+      kills: 5
+      custom-guardkills: 2
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c1k'
+      - '&c&l | &fPlayer Kills: &c5'
+      - ''
+    levelup_commands:
+      - 'gadmin addstat %gang% coins 5'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &5&lLevel 2'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&d&l | &f10x Gang Coins'
+      - ''
+  3:
+    requirements:
+      blocksmined: 25000
+      kills: 25
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c25k'
+      - '&c&l | &fPlayer Kills: &c25'
+      - ''
+    levelup_commands:
+      - 'gadmin setupgrade %gang% member_limit 4'
+      - 'gadmin addstat %gang% coins 15'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &3&lLevel 3'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&b&l | &f4x Member Limit'
+      - '&b&l | &f15x Gang Coins'
+      - ''
+  4:
+    requirements:
+      blocksmined: 150000
+      kills: 100
+      points: 50
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c150k'
+      - '&c&l | &fPlayer Kills: &c150'
+      - '&c&l | &fGang Points: &c50'
+      - ''
+    levelup_commands:
+      - 'gadmin setupgrade %gang% coloured_description 1'
+      - 'gadmin addstat %gang% coins 15'
+      - 'gadmin addstat %gang% points 10'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &6&lLevel 4'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&e&l | &cC&6o&el&ao&3u&9r&5e&cd &fGang Description'
+      - '&e&l | &f15x Gang Coins'
+      - '&e&l | &f10x Gang Points'
+      - ''
+  5:
+    requirements:
+      blocksmined: 350000
+      kills: 250
+      points: 100
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c350k'
+      - '&c&l | &fPlayer Kills: &c250'
+      - '&c&l | &fGang Points: &c100'
+      - ''
+    levelup_commands:
+      - 'gadmin setupgrade %gang% shop_discount 5'
+      - 'gadmin addstat %gang% coins 20'
+      - 'gadmin addstat %gang% points 10'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &6&lLevel 5'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&e&l | &f5% Gang Shop Discount'
+      - '&e&l | &f20x Gang Coins'
+      - '&e&l | &f10x Gang Points'
+      - ''
+  6:
+    requirements:
+      blocksmined: 750000
+      kills: 350
+      points: 200
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c750k'
+      - '&c&l | &fPlayer Kills: &c350'
+      - '&c&l | &fGang Points: &c200'
+      - ''
+    levelup_commands:
+      - 'gadmin setupgrade %gang% member_limit 5'
+      - 'gadmin addstat %gang% coins 15'
+      - 'gadmin addstat %gang% points 10'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &6&lLevel 6'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&e&l | &f5x Member Limit'
+      - '&e&l | &f15x Gang Coins'
+      - '&e&l | &f10x Gang Points'
+      - ''
+  7:
+    requirements:
+      blocksmined: 1500000
+      kills: 500
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c1.5M'
+      - '&c&l | &fPlayer Kills: &c500'
+      - ''
+    levelup_commands:
+      - 'gadmin setupgrade %gang% max_allies 2'
+      - 'gadmin addstat %gang% coins 35'
+      - 'gadmin addstat %gang% points 15'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &6&lLevel 7'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&e&l | &f2x Ally Limit'
+      - '&e&l | &f35x Gang Coins'
+      - '&e&l | &f15x Gang Points'
+      - ''
+  8:
+    requirements:
+      blocksmined: 2000000
+      kills: 750
+      points: 250
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c2M'
+      - '&c&l | &fPlayer Kills: &c750'
+      - '&c&l | &fGang Points: &c250'
+      - ''
+    levelup_commands:
+      - 'gadmin setupgrade %gang% member_limit 5'
+      - 'gadmin addstat %gang% coins 30'
+      - 'gadmin addstat %gang% points 20'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &6&lLevel 8'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&e&l | &f5x Member Limit'
+      - '&e&l | &f30x Gang Coins'
+      - '&e&l | &f20x Gang Points'
+      - ''
+  9:
+    requirements:
+      blocksmined: 2500000
+      kills: 1000
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c2.5M'
+      - '&c&l | &fPlayer Kills: &c1k'
+      - ''
+    levelup_commands:
+      - 'gadmin addstat %gang% coins 35'
+      - 'gadmin addstat %gang% points 25'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &6&lLevel 9'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&e&l | &f5% Coin Multiplier'
+      - '&e&l | &f30x Gang Coins'
+      - '&e&l | &f20x Gang Points'
+      - ''
+  10:
+    requirements:
+      blocksmined: 3500000
+      kills: 2500
+      points: 350
+    requirements_message:
+      - ''
+      - '&c&lGang Levelup Failure'
+      - '&fYou need the following for this level:'
+      - ''
+      - '&c&l | &fBlocks Mined: &c3.5M'
+      - '&c&l | &fPlayer Kills: &c2.5k'
+      - ''
+    levelup_commands:
+      - 'gadmin setupgrade %gang% max_allies 3'
+      - 'gadmin setupgrade %gang% member_limit 6'
+      - 'gadmin addstat %gang% coins 100'
+      - 'gadmin addstat %gang% points 50'
+    levelup_message:
+      - ''
+      - '&a&lGang Levelup &8- &6&lLevel 10'
+      - '&fCongrats on leveling up, you have unlocked:'
+      - ''
+      - '&e&l | &f3x Gang Allies'
+      - '&e&l | &f6x Member Limit'
+      - '&e&l | &f100x Gang Coins'
+      - '&e&l | &f50x Gang Points'
+      - ''

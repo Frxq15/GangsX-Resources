@@ -1,0 +1,38 @@
+ROWS: 4
+TITLE: "&8Choose a cell.."
+ITEMS:
+#  kingdom:
+#    SCHEMATIC: 'kingdom' # The permission gangsx.cells.<schematic> is required by the leader to use this cell.
+#    SLOT: 11
+#    MATERIAL: PURPLE_CANDLE
+#    USE-TEXTURE: true
+#    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/e0a4c94dd65a7cadc4172cedf3990a8542772bb113cdf1a0f78ef652c6abe6cb'
+#    AMOUNT: 1
+#    NAME: "&5Kingdom &8Cell"
+#    GLOW: false
+#    LORE:
+#      - '&finsert lore'
+  default:
+    SCHEMATIC: 'default-cell'
+    SLOT: 13
+    MATERIAL: IRON_BARS
+    AMOUNT: 1
+    NAME: "&4&lPrisoner Island"
+    GLOW: false
+    LORE:
+      - '&8Default Cell'
+      - ''
+      - '&7Crafted for the common criminal, this cell'
+      - '&7offers basic amenities to ensure a comfortable stay.'
+      - ''
+      - '&c| &fBuild Size: &a76x76'
+      - ''
+      - '&eClick to select this cell'
+MISC_ITEMS:
+  CLOSE_MENU:
+    SLOT: 31
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false

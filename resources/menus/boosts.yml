@@ -1,0 +1,380 @@
+ROWS: 5
+TITLE: "&8Gang Boosts"
+ITEMS:
+  tokens:
+    0:
+      MATERIAL: 'SUNFLOWER'
+      SLOT: 11
+      AMOUNT: 1
+      NAME: "&eTokens Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a token currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e0/5'
+        - '&e&l | &fMultiplier: &ex%multiplier%'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - '&e&l | &fCost: &e%cost% Tokens' #You can also use %costcurrency% if you want to use the currency name
+        - ''
+        - '&aClick to upgrade this gang boost'
+    1:
+      MATERIAL: 'SUNFLOWER'
+      SLOT: 11
+      AMOUNT: 1
+      NAME: "&eTokens Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a token currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e1/5'
+        - '&e&l | &fMultiplier: &ex%multiplier%'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - '&e&l | &fCost: &e%cost% Tokens'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    2:
+      MATERIAL: 'SUNFLOWER'
+      SLOT: 11
+      AMOUNT: 1
+      NAME: "&eTokens Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a token currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e2/5'
+        - '&e&l | &fMultiplier: &ex%multiplier%'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - '&e&l | &fCost: &e%cost% Tokens'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    3:
+      MATERIAL: 'SUNFLOWER'
+      SLOT: 11
+      AMOUNT: 1
+      NAME: "&eTokens Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a token currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e3/5'
+        - '&e&l | &fMultiplier: &ex%multiplier%'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - '&e&l | &fCost: &e%cost% Tokens'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    4:
+      MATERIAL: 'SUNFLOWER'
+      SLOT: 11
+      AMOUNT: 1
+      NAME: "&eTokens Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a token currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e4/5'
+        - '&e&l | &fMultiplier: &ex%multiplier%'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - '&e&l | &fCost: &e%cost% Tokens'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    5:
+      MATERIAL: 'SUNFLOWER'
+      SLOT: 11
+      AMOUNT: 1
+      NAME: "&eTokens Boost"
+      GLOW: true
+      LORE:
+        - '&fThis applies a token currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e5/5'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - ''
+        - '&aYou have completed this upgrade.'
+  gems: #boost type
+    0:
+      MATERIAL: 'PURPLE_DYE'
+      SLOT: 13
+      AMOUNT: 1
+      NAME: "&dGems Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gems currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&5Current:'
+        - '&d&l | &fLevel: &d0/5'
+        - '&d&l | &fMultiplier: &dx%multiplier%'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l | &fMultiplier: &dx%new_multiplier%'
+        - '&d&l | &fCost: &d%cost% Gems'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    1:
+      MATERIAL: 'PURPLE_DYE'
+      SLOT: 13
+      AMOUNT: 1
+      NAME: "&dGems Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gems currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&5Current:'
+        - '&d&l | &fLevel: &d1/5'
+        - '&d&l | &fMultiplier: &dx%multiplier%'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l | &fMultiplier: &dx%new_multiplier%'
+        - '&d&l | &fCost: &d%cost% Gems'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    2:
+      MATERIAL: 'PURPLE_DYE'
+      SLOT: 13
+      AMOUNT: 1
+      NAME: "&dGems Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gems currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&5Current:'
+        - '&d&l | &fLevel: &d2/5'
+        - '&d&l | &fMultiplier: &dx%multiplier%'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l | &fMultiplier: &dx%new_multiplier%'
+        - '&d&l | &fCost: &d%cost% Gems'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    3:
+      MATERIAL: 'PURPLE_DYE'
+      SLOT: 13
+      AMOUNT: 1
+      NAME: "&dGems Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gems currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&5Current:'
+        - '&d&l | &fLevel: &d3/5'
+        - '&d&l | &fMultiplier: &dx%multiplier%'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l | &fMultiplier: &dx%new_multiplier%'
+        - '&d&l | &fCost: &d%cost% Gems'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    4:
+      MATERIAL: 'PURPLE_DYE'
+      SLOT: 13
+      AMOUNT: 1
+      NAME: "&dGems Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gems currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&5Current:'
+        - '&d&l | &fLevel: &d4/5'
+        - '&d&l | &fMultiplier: &dx%multiplier%'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l | &fMultiplier: &dx%new_multiplier%'
+        - '&d&l | &fCost: &d%cost% Gems'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    5:
+      MATERIAL: 'PURPLE_DYE'
+      SLOT: 13
+      AMOUNT: 1
+      NAME: "&dGems Boost"
+      GLOW: true
+      LORE:
+        - '&fThis applies a gems currency multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&5Current:'
+        - '&d&l | &fLevel: &d5/5'
+        - '&d&l | &fMultiplier: &dx%new_multiplier%'
+        - ''
+        - '&aYou have completed this upgrade.'
+  coins:
+    0:
+      MATERIAL: 'GOLD_INGOT'
+      SLOT: 15
+      AMOUNT: 1
+      NAME: "&6Coins Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gang coins multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e0/3'
+        - '&e&l | &fMultiplier: &ex%multiplier%'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - '&e&l | &fCost: &e%cost% Coins'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    1:
+      MATERIAL: 'GOLD_INGOT'
+      SLOT: 15
+      AMOUNT: 1
+      NAME: "&6Coins Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gang coins multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e1/3'
+        - '&e&l | &fMultiplier: &ex%multiplier%'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - '&e&l | &fCost: &e%cost% Coins'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    2:
+      MATERIAL: 'GOLD_INGOT'
+      SLOT: 15
+      AMOUNT: 1
+      NAME: "&6Coins Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gang coins multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e2/3'
+        - '&e&l | &fMultiplier: &ex%multiplier%'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - '&e&l | &fCost: &e%cost% Coins'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    3:
+      MATERIAL: 'GOLD_INGOT'
+      SLOT: 15
+      AMOUNT: 1
+      NAME: "&6Coins Boost"
+      GLOW: true
+      LORE:
+        - '&fThis applies a gang coins multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&6Current:'
+        - '&e&l | &fLevel: &e3/3'
+        - '&e&l | &fMultiplier: &ex%new_multiplier%'
+        - ''
+        - '&aYou have completed this upgrade.'
+  points:
+    0:
+      MATERIAL: 'LAPIS_LAZULI'
+      SLOT: 31
+      AMOUNT: 1
+      NAME: "&bPoints Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gang points multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&3Current:'
+        - '&b&l | &fLevel: &b0/3'
+        - '&b&l | &fMultiplier: &bx%multiplier%'
+        - ''
+        - '&3Upgrade:'
+        - '&b&l | &fMultiplier: &bx%new_multiplier%'
+        - '&b&l | &fCost: &b%cost% Points'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    1:
+      MATERIAL: 'LAPIS_LAZULI'
+      SLOT: 31
+      AMOUNT: 1
+      NAME: "&bPoints Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gang points multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&3Current:'
+        - '&b&l | &fLevel: &b1/3'
+        - '&b&l | &fMultiplier: &bx%multiplier%'
+        - ''
+        - '&3Upgrade:'
+        - '&b&l | &fMultiplier: &bx%new_multiplier%'
+        - '&b&l | &fCost: &b%cost% Points'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    2:
+      MATERIAL: 'LAPIS_LAZULI'
+      SLOT: 31
+      AMOUNT: 1
+      NAME: "&bPoints Boost"
+      GLOW: false
+      LORE:
+        - '&fThis applies a gang points multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&3Current:'
+        - '&b&l | &fLevel: &b2/3'
+        - '&b&l | &fMultiplier: &bx%multiplier%'
+        - ''
+        - '&3Upgrade:'
+        - '&b&l | &fMultiplier: &bx%new_multiplier%'
+        - '&b&l | &fCost: &b%cost% Points'
+        - ''
+        - '&aClick to upgrade this gang boost'
+    3:
+      MATERIAL: 'LAPIS_LAZULI'
+      SLOT: 31
+      AMOUNT: 1
+      NAME: "&bPoints Boost"
+      GLOW: true
+      LORE:
+        - '&fThis applies a gang points multiplier'
+        - '&fto all members of your gang'
+        - ''
+        - '&3Current:'
+        - '&b&l | &fLevel: &b3/3'
+        - '&b&l | &fMultiplier: &bx%new_multiplier%'
+        - ''
+        - '&aYou have completed this upgrade.'
+
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 40
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false

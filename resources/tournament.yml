@@ -1,0 +1,237 @@
+# AVAILABLE PLACEHOLDERS
+# %gangsx_system_tournament_status%     - The current status of if a KoTH is active (true/false)
+# %gangsx_system_next_tournament%       - The time until the next scheduled Tournament
+# %gangsx_system_next_tournament_<type>%       - The time until the next scheduled Tournament of a specific type (mining, kills, currency)
+enable-schedulers: true #enable the scheduler system
+schedulers:
+  1:
+    type: 'MINING' #use 'kills' for kills tournaments, 'mining' for mining tournaments, 'currency_gained' for currency gained tournaments
+    day: 'Friday'
+    time: '13:00'
+    command: 'gadmin tournament start mining 30'
+  2:
+    type: 'KILLS'
+    day: 'Saturday'
+    time: '14:00'
+    command: 'gadmin tournament start kills 30'
+
+tournament:
+  reward_amount: 3 #how many of the top gangs in the tournament are applied to placeholders / given rewards
+  broadcastMinutes:
+    - 1
+    - 2
+    - 3
+    - 5
+    - 10
+    - 15
+    - 30
+    - 45
+  active: false #please do not manually edit these settings, use /ga tournament <start|end>
+  startTime: 0
+  remainingTime: 0
+  type: 'MINING' #Available types: MINING, KILLS, CURRENCY_GAINED
+  subtype: 'tokens' #used for currency gained tournaments
+
+messages:
+  tournament_time_remaining:
+    - ''
+    - '&a&lGang Tournament Active'
+    - '&fThere is currently a gang tournament active, participate to'
+    - '&fearn rewards for your gang.'
+    - ''
+    - '&b&l | &fType: &b%type%'
+    - '&b&l | &fTime Remaining: &b%time%'
+    - ''
+  tournament_started_mining:
+    - ''
+    - '&a&lGang Tournament Started'
+    - '&fThe tournament has started, gangs will now compete to see'
+    - '&fwho can mine the most &dblocks &fin &c&l%duration%&f, the gang'
+    - '&fwith the highest amount will win &bdivine &frewards.'
+    - ''
+  tournament_started_tokens:
+    - ''
+    - '&a&lGang Tournament Started'
+    - '&fThe tournament has started, gangs will now compete to see'
+    - '&fwho can earn the most &etokens &fin &c&l%duration%&f, the gang'
+    - '&fwith the highest amount will win &awonderful &frewards.'
+    - ''
+  tournament_started_kills:
+    - ''
+    - '&a&lGang Tournament Started'
+    - '&fThe tournament has started, gangs will now compete to see'
+    - '&fwho can kill the most &cplayers &fin &c&l%duration%&f, the gang'
+    - '&fwith the highest amount will win &eamazing &fprizes.'
+    - ''
+  tournament_ended_mining:
+    - ''
+    - '&c&lGang Tournament Ended'
+    - '&fThe tournament has ended, congratulations to the'
+    - '&ftop 3 gangs who have been given prizes:'
+    - ''
+    - '&e&l #1 &b- &f%1_displayname% &7(%1_value_formatted% Blocks)'
+    - '&7&l #2 &b- &f%2_displayname% &7(%2_value_formatted% Blocks)'
+    - '&6&l #3 &b- &f%3_displayname% &7(%3_value_formatted% Blocks)'
+    - ''
+  tournament_ended_kills:
+    - ''
+    - '&c&lGang Tournament Ended'
+    - '&fThe tournament has ended, congratulations to the'
+    - '&ftop 3 gangs who have been given prizes:'
+    - ''
+    - '&e&l #1 &b- &f%1% &7(%1_value_formatted% Kills)'
+    - '&7&l #2 &b- &f%2% &7(%2_value_formatted% Kills)'
+    - '&6&l #3 &b- &f%3% &7(%3_value_formatted% Kills)'
+    - ''
+  tournament_ended_tokens:
+    - ''
+    - '&c&lGang Tournament Ended'
+    - '&fThe tournament has ended, congratulations to the'
+    - '&ftop 3 gangs who have been given prizes:'
+    - ''
+    - '&e&l #1 &b- &f%1% &7(%1_value_formatted% Tokens)'
+    - '&7&l #2 &b- &f%2% &7(%2_value_formatted% Tokens)'
+    - '&6&l #3 &b- &f%3% &7(%3_value_formatted% Tokens)'
+    - ''
+  tournament_info:
+    - ''
+    - '&b&lTournament Information'
+    - '&b&l | &fStatus: &b%status%'
+    - '&b&l | &fType: &b%type%'
+    - '&b&l | &fCurrent Entries: &b%gangs%'
+    - ''
+    - '&b&l | &fStarted: &b%started%'
+    - '&b&l | &fDuration: &b%length%'
+    - '&b&l | &fTime Remaining: &b%time%'
+    - ''
+
+rewards:
+  mining:
+    1:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &e&l#1 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e15x Gang Coins'
+        - '&b&l | &d10x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 15'
+        - 'gadmin addstat %gang% points 10'
+    2:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &7&l#2 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e10x Gang Coins'
+        - '&b&l | &d5x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 10'
+        - 'gadmin addstat %gang% points 5'
+    3:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &6&l#3 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e5x Gang Coins'
+        - '&b&l | &d3x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 5'
+        - 'gadmin addstat %gang% points 3'
+  kills:
+    1:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &e&l#1 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e15x Gang Coins'
+        - '&b&l | &d10x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 15'
+        - 'gadmin addstat %gang% points 10'
+    2:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &7&l#2 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e10x Gang Coins'
+        - '&b&l | &d5x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 10'
+        - 'gadmin addstat %gang% points 5'
+    3:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &6&l#3 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e5x Gang Coins'
+        - '&b&l | &d3x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 5'
+        - 'gadmin addstat %gang% points 3'
+  tokens:
+    1:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &e&l#1 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e15x Gang Coins'
+        - '&b&l | &d10x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 15'
+        - 'gadmin addstat %gang% points 10'
+    2:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &7&l#2 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e10x Gang Coins'
+        - '&b&l | &d5x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 10'
+        - 'gadmin addstat %gang% points 5'
+    3:
+      message_gang: true
+      message:
+        - ''
+        - '&a&lCongratulations!'
+        - '&fYour gang finished &6&l#3 &fin the &d%type% &ftournament.'
+        - ''
+        - '&fYour gang has been given:'
+        - '&b&l | &e5x Gang Coins'
+        - '&b&l | &d3x Gang Points'
+        - ''
+      commands:
+        - 'gadmin addstat %gang% coins 5'
+        - 'gadmin addstat %gang% points 3'

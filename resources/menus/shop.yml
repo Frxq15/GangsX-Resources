@@ -1,0 +1,44 @@
+# PLEASE NOTE: If a currency is not specified, it will default to 'money', if the currency provided
+# is not set in the config.yml, or the integration required is not enabled, the item will not be enabled.
+ROWS: 5
+TITLE: "&8Gang Shop"
+CLOSE_ON_PURCHASE: true # If true, the menu will close after a purchase is made.
+ITEMS:
+  1:
+    ENABLED: true
+    SLOT: 0
+    MATERIAL: GRASS_BLOCK
+    AMOUNT: 1
+    NAME: "&ctest item"
+    GLOW: true
+    COST: 10 #In gang coins
+    CURRENCY: 'coins'
+    REQUIREMENTS:
+      level: 5
+    LORE:
+      - '&7This item requires level &b5'
+      - '&7Purchase this item for &b%cost% &7coins.'
+    COMMANDS: #%player%, %gang% and %cost% placeholders available.
+      - 'give %player% dirt 1'
+  2:
+    ENABLED: true
+    SLOT: 1
+    MATERIAL: EMERALD
+    AMOUNT: 1
+    NAME: "&aEmerald"
+    GLOW: true
+    COST: 1000000 #In gang balance
+    CURRENCY: 'money'
+    REQUIREMENTS: []
+    LORE:
+      - '&7Purchase this item for &b%cost%'
+    COMMANDS: #%player%, %gang% and %cost% placeholders available.
+      - 'give %player% dirt 1'
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 40
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false

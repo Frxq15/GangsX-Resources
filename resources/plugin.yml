@@ -1,0 +1,47 @@
+name: GangsX
+version: '${project.version}'
+main: me.frxq.gangsx.GangsX
+api-version: 1.18
+author: frxq
+website: https://frxq.dev
+description: GangsX is a powerful and customizable gangs plugin, offering a wide range of features to enhance gameplay and community interaction.
+softdepend:
+  - PlaceholderAPI
+  - Vault
+  - EdPrison
+  - WorldEdit
+  - WorldGuard
+  - FastAsyncWorldEdit
+
+commands:
+  gangsx:
+    usage: '/gangsx'
+    description: 'GangsX version command'
+  gang:
+    usage: '/gang'
+    description: 'Gang command'
+    aliases: [g]
+  gkoth:
+    usage: '/gkoth'
+    description: 'Gang KoTH command'
+    aliases: [gangkoth]
+  gangchat:
+    usage: '/gangchat <message>'
+    description: 'Gang chat command'
+    aliases: [gc]
+  allychat:
+    usage: '/allychat <message>'
+    description: 'Ally chat command'
+    aliases: [ac]
+  gadmin:
+    usage: '/gadmin'
+    description: 'Gang admin command'
+    aliases: [ga]
+  celladmin:
+    usage: '/celladmin'
+    description: 'Cell admin command'
+    aliases: [ca]
+  cell:
+    usage: '/cell'
+    description: 'Cell command'
+    aliases: [gangcell]

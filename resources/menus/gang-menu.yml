@@ -1,0 +1,144 @@
+ROWS: 6
+TITLE: "&8Gang Menu"
+
+# The following menus are available for the OPEN_MENU configuration:
+# "GangMenu", "Homes", "Stats", "Leaderboard", "Upgrades", "Permissions", "Tournament",
+# "Disband", "Quests", "Shop", "Members", "Levels", "Requests", "Displays", "DisplayShop",
+# "Boosts", "Milestones", "none"
+
+ITEMS:
+  LEADERBOARD:
+    SLOT: 10
+    MATERIAL: DIAMOND
+    AMOUNT: 1
+    NAME: "&e&lGang Top"
+    LORE:
+      - '&fView the top gangs on the server'
+      - '&ffighting for the top spot.'
+      - ''
+      - '&e&lClick &fto view the leaderboard'
+    OPEN_MENU: 'Leaderboard'
+  BOOSTS:
+    SLOT: 11
+    MATERIAL: NETHER_STAR
+    AMOUNT: 1
+    NAME: "&e&lBoosts"
+    LORE:
+      - '&fUnlock powerful boosts for your gang'
+      - '&fusing different gang currencies.'
+      - ''
+      - '&e&lClick &fto view all gang boosts'
+    OPEN_MENU: 'Boosts'
+  DISPLAYS:
+    SLOT: 12
+    MATERIAL: NAME_TAG
+    AMOUNT: 1
+    NAME: "&e&lName Displays"
+    LORE:
+      - '&fView and manage your gang displays.'
+      - ''
+      - '&e&lClick &fto view the displays'
+    OPEN_MENU: 'Displays'
+  HOMES:
+    SLOT: 14
+    MATERIAL: OAK_DOOR
+    AMOUNT: 1
+    NAME: "&e&lGang Homes"
+    LORE:
+      - '&fView and manage your gang homes.'
+      - ''
+      - '&e&lClick &fto view the gang homes'
+    OPEN_MENU: 'Homes'
+  LEVELS:
+    SLOT: 15
+    MATERIAL: EXPERIENCE_BOTTLE
+    AMOUNT: 1
+    NAME: "&e&lGang Levels"
+    LORE:
+      - '&fComplete gang levels to unlock'
+      - '&fpowerful perks for your gang.'
+      - ''
+      - '&e&lClick &fto view the gang levels'
+    OPEN_MENU: 'Levels'
+  MEMBERS:
+    SLOT: 16
+    MATERIAL: PLAYER_HEAD
+    AMOUNT: 1
+    NAME: "&e&lGang Members"
+    LORE:
+      - '&fView and manage your gang members.'
+      - ''
+      - '&e&lClick &fto view your members'
+    OPEN_MENU: 'Members'
+  MILESTONES:
+    SLOT: 28
+    MATERIAL: GOLD_INGOT
+    AMOUNT: 1
+    NAME: "&e&lGang Milestones"
+    LORE:
+      - '&fComplete gang milestones to earn'
+      - '&frewards for your gang.'
+      - ''
+      - '&e&lClick &fto view the milestones'
+    OPEN_MENU: 'Milestones'
+  PERMISSIONS:
+    SLOT: 29
+    MATERIAL: BOOK
+    AMOUNT: 1
+    NAME: "&e&lGang Permissions"
+    LORE:
+      - '&fManage your gang permissions.'
+      - ''
+      - '&e&lClick &fto view the permissions'
+    OPEN_MENU: 'Permissions'
+  QUESTS:
+    SLOT: 30
+    MATERIAL: PAPER
+    AMOUNT: 1
+    NAME: "&e&lGang Quests"
+    LORE:
+      - '&fView and manage your gang quests.'
+      - ''
+      - '&e&lClick &fto view the quests'
+    OPEN_MENU: 'Quests'
+  SHOP:
+    SLOT: 32
+    MATERIAL: CHEST
+    AMOUNT: 1
+    NAME: "&e&lGang Shop"
+    LORE:
+      - '&fPurchase items for your members'
+      - '&fand gang using gang currencies.'
+      - ''
+      - '&e&lClick &fto view the shop'
+    OPEN_MENU: 'Shop'
+  STATS:
+    SLOT: 33
+    MATERIAL: DIAMOND_PICKAXE
+    AMOUNT: 1
+    NAME: "&e&lGang Statistics"
+    LORE:
+      - '&fView your gang statistics and'
+      - '&ftop member contributions.'
+      - ''
+      - '&e&lClick &fto view tatistics'
+    OPEN_MENU: 'Stats'
+  UPGRADES:
+    SLOT: 34
+    MATERIAL: ENCHANTED_BOOK
+    AMOUNT: 1
+    NAME: "&e&lGang Upgrades"
+    LORE:
+      - '&fUpgrade your gang with powerful'
+      - '&fupgrades to enhance your experience.'
+      - ''
+      - '&e&lClick &fto view gang upgrades'
+    OPEN_MENU: 'Upgrades'
+MISC_ITEMS:
+  CLOSE_MENU:
+    SLOT: 49
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: [ ]
+    AMOUNT: 1
+    GLOW: false

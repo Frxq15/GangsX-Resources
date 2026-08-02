@@ -1,0 +1,71 @@
+default-radius: 50
+cell-spacing: 650 #the spacing between cells, this is used to prevent players from seeing adjacent cells
+warmup: 5 #teleportation warmup - use gangsx.cell.bypasstimer to bypass the warmup
+redeem-sound:
+  enabled: true
+  sound: 'ENTITY_PLAYER_LEVELUP'
+delete-respawn-world: 'world' #the world players will respawn in after their cell is deleted
+keep-value-on-reset: true #whether or not to keep the cell value when a cell is reset
+
+
+value_items:
+  value25:
+    value: 25
+    item: 'IRON_BLOCK'
+    glow: false
+    name: '&e25x Cell Value'
+    lore:
+      - '&fRedeem this value item to add value to your'
+      - '&fgang cell, value is added immediately upon redeeming.'
+      - ''
+      - '&b&l • &fValue: &bx25'
+      - ''
+      - '&e&lClick &fto redeem this value.'
+  value100:
+    value: 100
+    item: 'GOLD_BLOCK'
+    glow: false
+    name: '&e100x Cell Value'
+    lore:
+      - '&fRedeem this value item to add value to your'
+      - '&fgang cell, value is added immediately upon redeeming.'
+      - ''
+      - '&b&l • &fValue: &bx100'
+      - ''
+      - '&e&lClick &fto redeem this value.'
+  value500:
+    value: 500
+    item: 'DIAMOND_BLOCK'
+    glow: true
+    name: '&e500x Cell Value'
+    lore:
+      - '&fRedeem this value item to add value to your'
+      - '&fgang cell, value is added immediately upon redeeming.'
+      - ''
+      - '&b&l • &fValue: &bx500'
+      - ''
+      - '&e&lClick &fto redeem this value.'
+  value2500:
+    value: 2500
+    item: 'EMERALD_BLOCK'
+    glow: true
+    name: '&e2500x Cell Value'
+    lore:
+      - '&fRedeem this value item to add value to your'
+      - '&fgang cell, value is added immediately upon redeeming.'
+      - ''
+      - '&b&l • &fValue: &bx2500'
+      - ''
+      - '&e&lClick &fto redeem this value.'
+  value5000:
+    value: 5000
+    item: 'NETHERITE_BLOCK'
+    glow: true
+    name: '&e5000x Cell Value'
+    lore:
+      - '&fRedeem this value item to add value to your'
+      - '&fgang cell, value is added immediately upon redeeming.'
+      - ''
+      - '&b&l • &fValue: &bx5000'
+      - ''
+      - '&e&lClick &fto redeem this value.'

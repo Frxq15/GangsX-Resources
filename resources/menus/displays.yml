@@ -1,0 +1,392 @@
+ROWS: 5
+TITLE: "&8Gang Displays"
+STATUS:
+  locked: '&cLocked'
+  unlocked: '&aUnlocked'
+ITEMS:
+  DEFAULT:
+    SLOT: 0
+    DISPLAY_ID: 'default'
+    MATERIAL: WHITE_CARPET
+    AMOUNT: 1
+    NAME: "&fDefault Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &f%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  RED:
+    SLOT: 1
+    DISPLAY_ID: 'red'
+    MATERIAL: RED_WOOL
+    AMOUNT: 1
+    NAME: "&cRed Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &c%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  AQUA:
+    SLOT: 2
+    DISPLAY_ID: 'aqua'
+    MATERIAL: LIGHT_BLUE_CONCRETE
+    AMOUNT: 1
+    NAME: "&bAqua Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &b%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  SUNSET:
+    SLOT: 3
+    DISPLAY_ID: 'sunset'
+    MATERIAL: ORANGE_TERRACOTTA
+    AMOUNT: 1
+    NAME: "&#DB6A07Sunset Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#DB6A07%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  GREEN:
+    SLOT: 4
+    DISPLAY_ID: 'green'
+    MATERIAL: GREEN_DYE
+    AMOUNT: 1
+    NAME: "&aGreen Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &a%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  BLUE:
+    SLOT: 5
+    DISPLAY_ID: 'blue'
+    MATERIAL: BLUE_CANDLE
+    AMOUNT: 1
+    NAME: "&9Blue Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &9%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  YELLOW:
+    SLOT: 6
+    DISPLAY_ID: 'yellow'
+    MATERIAL: YELLOW_BED
+    AMOUNT: 1
+    NAME: "&eYellow Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &e%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  DARK_GRAY:
+    SLOT: 7
+    DISPLAY_ID: 'dark_gray'
+    MATERIAL: STONE
+    AMOUNT: 1
+    NAME: "&8Dark Gray Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &8%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  LIGHT_PURPLE:
+    SLOT: 8
+    DISPLAY_ID: 'light_purple'
+    MATERIAL: PURPLE_GLAZED_TERRACOTTA
+    AMOUNT: 1
+    NAME: "&dLight Purple Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &d%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  GOLD:
+    SLOT: 9
+    DISPLAY_ID: 'gold'
+    MATERIAL: YELLOW_CONCRETE
+    AMOUNT: 1
+    NAME: "&6Gold Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &6%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  DARK_RED:
+    SLOT: 10
+    DISPLAY_ID: 'dark_red'
+    MATERIAL: NETHER_WART_BLOCK
+    AMOUNT: 1
+    NAME: "&4Dark Red Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &4%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  ROSE:
+    SLOT: 11
+    DISPLAY_ID: 'rose'
+    MATERIAL: PINK_TERRACOTTA
+    AMOUNT: 1
+    NAME: "&#FF5E78Rose Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#FF5E78%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  EMERALD:
+    SLOT: 12
+    DISPLAY_ID: 'emerald'
+    MATERIAL: EMERALD_BLOCK
+    AMOUNT: 1
+    NAME: "&#50C878Emerald Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#50C878%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  SKY:
+    SLOT: 13
+    DISPLAY_ID: 'sky'
+    MATERIAL: LIGHT_BLUE_STAINED_GLASS
+    AMOUNT: 1
+    NAME: "&#61A9FFSky Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#61A9FF%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  LAVENDER:
+    SLOT: 14
+    DISPLAY_ID: 'lavender'
+    MATERIAL: PURPLE_WOOL
+    AMOUNT: 1
+    NAME: "&#B57EDCLavender Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#B57EDC%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  MINT:
+    SLOT: 15
+    DISPLAY_ID: 'mint'
+    MATERIAL: GREEN_STAINED_GLASS
+    AMOUNT: 1
+    NAME: "&#98FF98Mint Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#98FF98%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  CORAL:
+    SLOT: 16
+    DISPLAY_ID: 'coral'
+    MATERIAL: TUBE_CORAL_BLOCK
+    AMOUNT: 1
+    NAME: "&#FF7F50Coral Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#FF7F50%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  NEON_GREEN:
+    SLOT: 17
+    DISPLAY_ID: 'neon_green'
+    MATERIAL: SLIME_BLOCK
+    AMOUNT: 1
+    NAME: "&#39FF14Neon Green Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#39FF14%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  ELECTRIC_BLUE:
+    SLOT: 18
+    DISPLAY_ID: 'electric_blue'
+    MATERIAL: DIAMOND_BLOCK
+    AMOUNT: 1
+    NAME: "&#7DF9FFElectric Blue Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#7DF9FF%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  PASTEL_ORANGE:
+    SLOT: 19
+    DISPLAY_ID: 'pastel_orange'
+    MATERIAL: HONEY_BLOCK
+    AMOUNT: 1
+    NAME: "&#FFB347Pastel Orange Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#FFB347%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  BABY_BLUE:
+    SLOT: 20
+    DISPLAY_ID: 'baby_blue'
+    MATERIAL: BLUE_ICE
+    AMOUNT: 1
+    NAME: "&#89CFF0Baby Blue Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#89CFF0%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  ROYAL_PURPLE:
+    SLOT: 21
+    DISPLAY_ID: 'royal_purple'
+    MATERIAL: PURPLE_CONCRETE
+    AMOUNT: 1
+    NAME: "&#7851A9Royal Purple Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#7851A9%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  CRIMSON:
+    SLOT: 22
+    DISPLAY_ID: 'crimson'
+    MATERIAL: NETHER_WART_BLOCK
+    AMOUNT: 1
+    NAME: "&#DC143CCrimson Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#DC143C%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  STEEL:
+    SLOT: 23
+    DISPLAY_ID: 'steel'
+    MATERIAL: ANVIL
+    AMOUNT: 1
+    NAME: "&#4682B4Steel Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#4682B4%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  PEACH:
+    SLOT: 24
+    DISPLAY_ID: 'peach'
+    MATERIAL: SAND
+    AMOUNT: 1
+    NAME: "&#FFE5B4Peach Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#FFE5B4%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  INDIGO:
+    SLOT: 25
+    DISPLAY_ID: 'indigo'
+    MATERIAL: OBSIDIAN
+    AMOUNT: 1
+    NAME: "&#4B0082Indigo Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#4B0082%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+  LIME_PUNCH:
+    SLOT: 26
+    DISPLAY_ID: 'lime_punch'
+    MATERIAL: GLOW_LICHEN
+    AMOUNT: 1
+    NAME: "&#D0FF14Lime Punch Display"
+    GLOW: false
+    LORE:
+      - '&7This will change the display colour of your gang name'
+      - ''
+      - '&e&l | &fPreview: &#D0FF14%gang%'
+      - '&e&l | &fStatus: %status%'
+      - ''
+      - '&e&lClick &fto apply this display.'
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 40
+    MATERIAL: ARROW
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&cExit'
+    LORE: []

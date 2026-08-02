@@ -1,0 +1,87 @@
+ROWS: 5
+TITLE: "&8Gang Tournament"
+
+DISPLAY_AMOUNT: 14
+DISPLAY_SLOTS:
+  1: 10 # lb position : slot to be displayed
+  2: 11
+  3: 12
+  4: 13
+  5: 14
+  6: 15
+  7: 16
+  8: 19
+  9: 20
+  10: 21
+  11: 22
+  12: 23
+  13: 24
+  14: 25
+
+emoji:
+  mining: '&e&l ⛏ &fMined:'
+  kills: '&e&l ⚔ &fKills:'
+  tokens: '&e&l ⛃ &fTokens:'
+  gems: '&e&l 💎 &fGems:'
+
+
+ITEMS:
+  TOP_FORMAT:
+    NAME: '&e&lGang &b%gang%'
+    LORE:
+      - ''
+      - '&c&l ➾ &fPos. %position%'
+      - '&c&l 👑 &fLeader: &c%leader%'
+      - ''
+      - '%emoji% &e%value%' #you can also use %type% to get the type of tournament
+      - ''
+      - '&e&lClick &fto view their gang profile'
+  GANG_NOT_FOUND:
+    NAME: '&e&lGang &bN/A'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/badc048a7ce78f7dad72a07da27d85c0916881e5522eeed1e3daf217a38c1a'
+    LORE:
+      - ''
+      - '&c&l ➾ &fPos. %position%'
+      - '&c&l 👑 &fLeader: &cN/A'
+      - ''
+      - '%emoji% &e0'
+      - ''
+      - '&eNo gang data found for this position.'
+MISC_ITEMS:
+  1:
+    SLOT: 39
+    MATERIAL: "WRITABLE_BOOK"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&ePlacement Rewards'
+    LORE:
+      - '&fEarn epic rewards by defeating the competition.'
+      - ''
+      - '&e&l➾ &fPos. &e&l#1'
+      - '&b • &f100x Gang Points'
+      - '&b • &f50x Gang Coins'
+      - ''
+      - '&7&l➾ &fPos. &7&l#2'
+      - '&b • &f50x Gang Points'
+      - '&b • &f30x Gang Coins'
+      - ''
+      - '&6&l➾ &fPos. &6&l#3'
+      - '&b • &f25x Gang Points'
+      - '&b • &f15x Gang Coins'
+      - ''
+      - '&eRewards are automatically applied when the tournament ends.'
+  time: #keep this as "time" and clicking it will refresh the timer
+    SLOT: 41
+    MATERIAL: "CLOCK"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&eTournament Information'
+    LORE:
+      - '&fView the current tournament information.'
+      - ''
+      - '&b&l➾ &fType: &b%subtype%'
+      - ''
+      - '&b&l➾ &fDuration: &b%duration%'
+      - '&b&l➾ &fTime Left: &b%time%'
+      - ''
+      - '&aThe leaderboard is updated in real-time.'

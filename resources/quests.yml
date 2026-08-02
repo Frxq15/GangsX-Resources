@@ -1,0 +1,716 @@
+time:
+  daily-reset-time: "15:00" # Daily quests reset at 3pm
+  weekly-reset-time: "17:00" # Weekly quests reset at 5pm on "weekly-reset-day"
+  weekly-reset-day: "Friday" # Weekly quests reset on Sunday
+
+amount:
+  daily-quest-amount: 2
+  weekly-quest-amount: 1
+
+#statistic types:
+### blocksmined, blocksplaced, kothwins, bosskills, currency_gained, mobkills, kills
+###
+quests:
+  daily:
+    mine_blocks_1:
+      description: "Mine %target% blocks as a gang"
+      statistic_type: "blocksmined"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 10
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 50
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 20
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%coins%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP' # Set to NONE and it will disable the sound
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eMine %target% Blocks Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%coins%x Gang Points'
+        - ''
+    mine_blocks_2:
+      description: "Mine %target% blocks as a gang"
+      statistic_type: "blocksmined"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 1000
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 5000
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 3500
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eMine %target% Blocks Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%coins%x Gang Points'
+        - ''
+    mine_blocks_3:
+      description: "Mine %target% blocks as a gang"
+      statistic_type: "blocksmined"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 100
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 500
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 200
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eMine %target% Blocks Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''
+    mob_kills_1:
+      description: "Kill %target% mobs as a gang"
+      statistic_type: "mobkills"
+      member_settings:
+        max-threshold: 3
+        default:
+          target: 10
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 50
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 20
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'ROTTEN_FLESH'
+          name: '&eKill %target% Mobs'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'ROTTEN_FLESH'
+          name: '&eKill %target% Mobs'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f10x Gang Coins'
+            - '&e&l | &f5x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eKill %target% Mobs Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''
+    win_koths_1:
+      description: "Win %target% KoTHs as a gang"
+      statistic_type: "kothwins"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 1
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 1
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+      gui:
+        completed:
+          material: 'ANVIL'
+          name: '&eWin %target% KoTH'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'ANVIL'
+          name: '&e&eWin %target% KoTH'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eDaily'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &e&eWin %target% KoTH Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''
+  weekly:
+    mine_blocks_5:
+      description: "Mine %target% blocks as a gang"
+      statistic_type: "blocksmined"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 5000
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 25000
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 10000
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eMine %target% Blocks Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''
+    mine_blocks_6:
+      description: "Mine %target% blocks as a gang"
+      statistic_type: "blocksmined"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 10000
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 50000
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 25000
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'DIAMOND_PICKAXE'
+          name: '&eMine %target% Blocks'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eMine %target% Blocks Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''
+    win_koths_2:
+      description: "Win %target% KoTHs as a gang"
+      statistic_type: "kothwins"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 2
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 3
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 3
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'ANVIL'
+          name: '&eWin %target% KoTHs'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'ANVIL'
+          name: '&e&eWin %target% KoTHs'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eWin %target% KoTHs Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''
+    kill_mobs_2:
+      description: "Kill %target% mobs as a gang"
+      statistic_type: "mobkills"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 1000
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 2500
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 2000
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'ROTTEN_FLESH'
+          name: '&eKill %target% Mobs'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'ROTTEN_FLESH'
+          name: '&e&eKill %target% Mobs'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eWin %target% Mobs Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''
+    earn_tokens_1:
+      description: "Earn %target% tokens as a gang"
+      statistic_type: "currency_gained" # the target will be auto formatted as 1B, 1T etc if the statistic type is "currency_gained"
+      currency: "tokens"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 1000000000000
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 5000000000000
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 3000000000000
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'SUNFLOWER'
+          name: '&eEarn %target% Tokens'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'SUNFLOWER'
+          name: '&eEarn %target% Tokens'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eEarn %target% Tokens Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''
+    earn_tokens_2:
+      description: "Earn %target% tokens as a gang"
+      statistic_type: "currency_gained" # the target will be auto formatted as 1B, 1T etc if the statistic type is "tokensgained"
+      currency: "tokens"
+      member_settings:
+        max-threshold: 3 #if the member count is >= 3, then the "max" quest will be given
+        default:
+          target: 5000000000000
+          reward-placeholders:
+            coins: 1000
+            points: 500
+        max:
+          target: 15000000000000
+          reward-placeholders:
+            coins: 5000
+            points: 2500
+        2:
+          target: 10000000000000
+          reward-placeholders:
+            coins: 2000
+            points: 1000
+      gui:
+        completed:
+          material: 'SUNFLOWER'
+          name: '&eEarn %target% Tokens'
+          glow: true
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &a%target%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&aYou have completed this quest.'
+        incomplete:
+          material: 'SUNFLOWER'
+          name: '&eEarn %target% Tokens'
+          glow: false
+          lore:
+            - '&7&o"%description%"'
+            - ''
+            - '&eInformation:'
+            - '&e&l | &fType: &eWeekly'
+            - '&e&l | &fProgress: &c%progress%&f/&a%target%'
+            - ''
+            - '&eRewards:'
+            - '&e&l | &f%coins%x Gang Coins'
+            - '&e&l | &f%points%x Gang Points'
+            - ''
+            - '&eComplete this quest to earn rewards.'
+      rewards:
+        - 'gadmin addstat %gang% coins %coins%'
+        - 'gadmin addstat %gang% points %points%'
+      sound: 'ENTITY_PLAYER_LEVELUP'
+      message:
+        - ''
+        - '&a&lGang Quest Complete'
+        - '&fYour gang completed the &eEarn %target% Tokens Quest &fand received:'
+        - '&b&l • &f%coins%x Gang Coins'
+        - '&b&l • &f%points%x Gang Points'
+        - ''

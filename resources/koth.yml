@@ -1,0 +1,39 @@
+# AVAILABLE PLACEHOLDERS
+# %gangsx_system_koth_active%     - The current status of if a KoTH is active (yes/no)
+# %gangsx_system_koth_name%       - The name of the currently active KoTH
+# %gangsx_system_next_koth%       - The time until the next scheduled koth
+settings:
+  progress-broadcast-interval: 30 # How often to broadcast capture progress messages (in seconds)
+  inactivity-timer: 10 # Time in minutes before a koth is automatically cancelled due to inactivity
+  enable-schedulers: true # Enable or disable the use of schedules for KoTHs
+  schedulers:
+    1:
+      day: 'Monday' # Day of the week to run the scheduler
+      time: '12:00' # Start time in HH:mm format
+      koth: 'example'
+    2:
+      day: 'Wednesday' # Day of the week to run the scheduler
+      time: '14:00' # Start time in HH:mm format
+      koth: 'random'
+    3:
+      day: 'Friday' # Day of the week to run the scheduler
+      time: '16:00' # Start time in HH:mm format
+      koth: 'random'
+    4:
+      day: 'Saturday' # Day of the week to run the scheduler
+      time: '17:00' # Start time in HH:mm format
+      koth: 'random'
+
+defaults: # Default rewards will be used if the KoTH does not have specific rewards defined.
+  capture-time: 300 # Time in seconds a gang needs to hold the KoTH point to win. Added to new KoTHs by default.
+  commands:
+    - 'ga addstat %gang% points 1500'
+    - 'ga addstat %gang% coins 1000'
+  messages:
+    - ''
+    - '&c&lGang KoTH &8- &7You won!'
+    - '&fCongrats on winning this koth, you have earned:'
+    - ''
+    - '&e&l • &e1,500x &fGang Points'
+    - '&e&l • &e1,000x &fGang Coins'
+    - ''

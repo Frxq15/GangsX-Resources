@@ -1,0 +1,3 @@
+#This file is used to store and execute pending actions for gang members.
+#if you use the executeforall command for a gang, any members who are not online will have their actions stored here
+#and then they will be executed when the player next logs in.

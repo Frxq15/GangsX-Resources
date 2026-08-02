@@ -1,0 +1,86 @@
+ROWS: 4
+TITLE: "&8Managing %player%"
+
+ITEMS:
+  PLAYER: #has PlaceholderAPI support, Material 'PLAYER_HEAD' item will use target player skull
+    NAME: '&e&lManaging &b%player%'
+    MATERIAL: 'PLAYER_HEAD'
+    ACTION: 'CLOSE_MENU'
+    AMOUNT: 1
+    GLOW: false
+    SLOT: 10
+    LORE:
+      - ''
+      - '&e&l • &fRole: &b%role%' #can also use %title%, %roleicon% and %roleprefix%
+      - '&e&l • &fStatus: &b%status%' #can also use %status%
+      - ''
+      - '&eContributions:'
+      - '&e&l • &fKills: &b%kills_formatted%'
+      - '&e&l • &fDeaths: &b%deaths_formatted%'
+      - '&e&l • &fMob Kills: &b%mobkills_formatted%'
+      - '&e&l • &fBoss Kills: &b%bosskills_formatted%'
+      - ''
+      - '&e&l • &fBlocks Mined: &b%blocksmined_formatted%'
+      - '&e&l • &fBlocks Placed: &b%blocksplaced_formatted%'
+      - '&e&l • &fTokens Gained: &b%tokensgained_formatted%'
+      - ''
+  PROMOTE:
+    NAME: '&a&lPromote &b%player%'
+    MATERIAL: 'GREEN_CARPET'
+    ACTION: 'g promote %player%'
+    AMOUNT: 1
+    GLOW: false
+    SLOT: 12
+    LORE:
+      - ''
+      - '&e&l • &fCurrent Role: &b%role%'
+      - '&e&l • &fPromotion: &b%promotion_role%'
+      - ''
+      - '&e&lClick &fto promote this player'
+  DEMOTE:
+    NAME: '&c&lDemote &b%player%'
+    MATERIAL: 'RED_CARPET'
+    ACTION: 'g demote %player%'
+    AMOUNT: 1
+    GLOW: false
+    SLOT: 13
+    LORE:
+      - ''
+      - '&e&l • &fCurrent Role: &b%role%'
+      - '&e&l • &fDemotion Role: &b%demotion_role%'
+      - ''
+      - '&e&lClick &fto demote this player'
+  KICK:
+    NAME: '&4&lKick &b%player%'
+    MATERIAL: 'OAK_DOOR'
+    ACTION: 'g kick %player%'
+    AMOUNT: 1
+    GLOW: false
+    SLOT: 14
+    LORE:
+      - ''
+      - '&e&l • &fPlease note that kicking this player from your'
+      - '&fgang will reset all of their contribution statistics.'
+      - ''
+      - '&e&lClick &fto kick this player'
+  INVSEE:
+    NAME: '&2&lInvsee &b%player%'
+    MATERIAL: 'CHEST'
+    ACTION: 'g invsee %player%'
+    AMOUNT: 1
+    GLOW: false
+    SLOT: 15
+    LORE:
+      - ''
+      - '&e&l • &fView all of the current armor and items'
+      - '&fin this gang members inventory.'
+      - ''
+      - '&e&lClick &fto invsee this player'
+MISC_ITEMS:
+  CLOSE_MENU:
+    SLOT: 31
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false

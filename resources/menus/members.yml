@@ -1,0 +1,49 @@
+ROWS: 5
+TITLE: "&8Gang Members"
+LORE_OUTCOMES:
+  pass: '&e&lClick &fto manage this member'
+  fail: '&cYou cannot manage this member'
+  self: '&cYou cannot manage yourself'
+
+DISPLAY_SLOTS:
+  1: 10 # member position : slot to be displayed # sorted by role priority
+  2: 11
+  3: 12
+  4: 13
+  5: 14
+  6: 15
+  7: 16
+  8: 19
+  9: 20
+  10: 21
+  11: 22
+  12: 23
+  13: 24
+  14: 25
+
+ITEMS:
+  MEMBER: #has PlaceholderAPI support
+    NAME: '&e&lPlayer &b%player%'
+    LORE:
+      - ''
+      - '&e&l • &fRole: &b%role%' #can also use %title%, %roleicon% and %roleprefix%
+      - '&e&l • &fStatus: &b%status%'
+      - ''
+      - '&eContributions:'
+      - '&e&l • &fKills: &b%kills_formatted%'
+      - '&e&l • &fDeaths: &b%deaths_formatted%'
+      - '&e&l • &fMob Kills: &b%mobkills_formatted%'
+      - '&e&l • &fBoss Kills: &b%bosskills_formatted%'
+      - ''
+      - '&e&l • &fBlocks Mined: &b%blocksmined_formatted%'
+      - '&e&l • &fBlocks Placed: &b%blocksplaced_formatted%'
+      - ''
+      - '%lore_outcome%'
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 40
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false

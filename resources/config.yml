@@ -1,0 +1,437 @@
+# Join the discord @ https://discord.gg/pB9Z6TrwvS for any support
+# View the full GangsX Wiki here: https://frxq15.gitbook.io/gangsx
+upgrade_version: "2.3" #used for automatic update of config values, do not change this unless you know what you are doing
+
+#available types - "MySQL", "h2"
+storage-method: "h2"
+database:
+  mysql:
+    host: "host"
+    port: 3306
+    database: "database"
+    username: "username"
+    password: "password"
+
+
+settings:
+  debug_mode: false #set to true to enable console debug messages
+  update-checker: true #set to false to disable update checking
+  social_spy_includes_ally_chat: false #set to true to include ally chat in admin social spy
+  shop_broadcast_to_gang: false #set to false to disable broadcasting shop purchases to the gang
+  tournament-min-required-gangs: 3 #minimum number of gangs with >= 1 member online required on the server to start a tournament
+  koth-min-required-gangs: 3 #minimum number of gangs with >= 1 member online required on the server to start a koth
+  timezone: 'UTC-05:00' #timezone for quests, tournaments, and koth schedules (i.e 'America/New_York', 'Europe/London', 'UTC')
+  locale:
+    enable-prefix: false #set to false to disable the prefix in all gangsx messages
+    prefix: '&f[&bGangsX&f] &r'
+    enable-no-gang-on-join: true #set to false to disable the no gang message on player join
+    no-gang-message-delay: 2 #delay in seconds before sending the no gang message on player join
+  time_displays:
+    days: 'd'
+    day: 'd'
+    hours: 'h'
+    hour: 'h'
+    minutes: 'm'
+    minute: 'm'
+    seconds: 's'
+    second: 's'
+  placeholders:
+    no-gang-string: ''
+    no-gang-int: '0'
+    custom-gang: '&8[%displayname%&8]' #this is used for the %gangsx_gang_custom-name% placeholder, you can use %gang% or %displayname%
+
+integrations:
+  edprison:
+    enabled: false
+    use-edp-blockbreak-event: true #set to false to disable the use of the edp block break event, this will use the default block break event instead
+  vault:
+    enabled: true
+
+modules:
+  koth: #GangsX KoTH is designed to use Gang-Based capturing, This requires FAWE
+    enabled: true
+  tournament:
+    enabled: true
+  boosts:
+    enabled: true
+  quests:
+    enabled: true
+  homes:
+    enabled: true
+    warmup: 5 #teleportation warmup - use gangsx.home.bypasstimer to bypass the warmup
+    blocked-worlds:
+      - 'exampleworld' #worlds where players cannot use /g home, /g homes or /g sethome
+  vault:
+    enabled: true
+  levels:
+    enabled: true
+  invsee:
+    enabled: true
+  milestones:
+    enabled: true
+  relations:
+    enabled: true
+  displays:
+    enabled: true
+    equip-requires-unlock: true #If this is false then a gang can equip any display without unlocking it
+  currencytracker: #requires edprison integration
+    enabled: false
+    tracked-currencies: #these are the currencies that will be tracked in the currency tracker, they must be registered in the gang settings
+      - 'tokens'
+      - 'gems'
+  cells: #requires both FastAsyncWorldEdit & WorldGuard
+    enabled: true
+
+
+
+broadcasts: #toggle messages that will be broadcasted when the gang event occurs
+  GANG_CREATED: true
+  GANG_DISBANDED: true
+  GANG_PLAYER_KICK: false
+  GANG_PLAYER_JOIN: false
+  GANG_PLAYER_LEAVE: false
+  GANG_OWNERSHIP_CHANGE: false
+  GANG_RENAME: true
+  KOTH_FAIL_START: true
+  TOURNAMENT_FAIL_START: true
+
+command-settings:
+  stats:
+    register-stats-as-commands: true #if this is true then the stats will be registered as commands
+    commands:
+      guardkills:
+        statistic-type: 'custom' #this is a custom statistic, it must be registered in the gang settings
+        statistic-name: 'guardkills' #this is the name of the statistic, it must match the name in the gang settings
+        enabled: true
+        locale-id: 'statistics.guardkills' #The message is located inside locale.yml STATISTICS -> GUARDKILLS
+      blocksmined:
+        statistic-type: 'blocksmined' #this is a default implemented statistic
+        statistic-name: 'blocksmined'
+        enabled: true
+        locale-id: 'statistics.blocksmined'
+
+gang:
+  join-commands: [ ]
+  # - 'msg %player_name% You joined %gangsx_gang_name%!' #full placeholder support is available
+  leave-commands: [ ]
+  # - 'msg %player_name% You left %gangsx_gang_name%!'
+  create-commands: [ ]
+  # - 'msg %player_name% You created %gangsx_gang_name%!'
+  disband-commands: [ ]
+  # - 'deletelogs %gang%' # The "leave-commands" is executed against every member of the gang before disbanding.
+  settings:
+    use-disband-gui: true #set this to false to disable the disband GUI
+    enable-gang-shop: true #set this to false to disable the gang shop
+    enable-gang-titles: true #set this to false to disable the gang titles
+    enable-schedules-command: true #set this to false to disable the /g schedules command
+    list-gangs-per-page: 5 #how many gangs to display per page in the /g list command
+  currencies: #do not use points or coins - these are reserved for gangsx
+    tokens: #this is what the currency will be called in gangsx
+      integration_type: 'edprison' #the integration type used to get the currency, this is used for the edprison integration
+      currency: 'tokens' #the name of the currency provided by the integration
+      allow-deposit: true #if this is false then the gang cannot deposit this currency into the gang bank
+      allow-withdraw: true #if this is false then the gang cannot withdraw this currency from the gang bank
+    gems:
+        integration_type: 'edprison'
+        currency: 'gems'
+        allow-deposit: true
+        allow-withdraw: true
+    money:
+      integration_type: 'vault'
+      currency: 'money'
+      allow-deposit: true
+      allow-withdraw: true
+    example:
+      integration_type: 'gangsx'
+      currency: 'example' #this is an example of a custom gang currency, you can create your own currencies by adding them here with the integration_type set to 'gangsx'
+  custom_statistics:
+    guardkills: #use this however you want, increment it for gangs using /ga addstat <gang> custom-guardkills <amount>
+      name: 'guardkills'
+      enabled: true
+  save-interval: 15 #duration in minutes to save player & gang data factories to the defined storage method
+  name_regex: '^[a-zA-Z0-9]+$'
+  name_min_length: 3
+  name_max_length: 16
+  title_min_length: 3
+  title_max_length: 24
+  description_min_length: 3
+  description_max_length: 50
+  command_cooldowns:
+    alert: 5 #seconds
+    rename: 60
+  vault:
+    name: '&8Gang Vault'
+  leaderboard:
+    statistic: 'points' #the statistic to use for the order of the leaderboard
+    update-interval: 15 #duration in minutes to update the leaderboard
+    update-interval-message: false
+    cell-update-interval-message: false
+    display_placeholders: #these are the placeholders that can be used in the leaderboard position displays
+      1: '&e&l#1'
+      2: '&7&l#2'
+      3: '&6&l#3'
+      default: '&b#%position%'
+  roles:
+    prefixes: #displayed in gang chats and used for the %roleprefix% placeholder
+      leader: '&8[&4Leader&8]'
+      co_leader: '&8[&dCo-Leader&8]'
+      mod: '&8[&cMod&8]'
+      member: '&8[&aMember&8]'
+      recruit: '&8[&7Recruit&8]'
+    icons: #displayed in gang info and used for the %roleicon% placeholder
+      leader: '&4👑 '
+      co_leader: '&3💼 '
+      mod: '&2🛠 '
+      member: '&b🧍 '
+      recruit: '&7👁 '
+  default_description: 'No description set :('
+  ally_chat_format: "&f[&dAlly-Chat&f] &7(%gang%) &f%icon%%player%: &d%message%"
+  chat_format: "&f[&bGang-Chat&f] &f%title%&f%icon%%player%: &b%message%" #can also use %role% and %icon% placeholders
+  social_spy_format: "&f[&cGang-Spy&f] &7(%gang%) &f%title%&r&f%icon%%player%: &c%message%"
+  ally_spy_format: "&f[&5Ally-Spy&f] &7(%gang%) &f%icon%%player%: &5%message%"
+  default_permissions: #changing these will not update existing gangs, only new ones
+    BANK_DEPOSIT: 'MOD'
+    BANK_WITHDRAW: 'MOD'
+    CHANGE_DESCRIPTION: 'MOD'
+    MANAGE_RELATIONS: 'CO_LEADER'
+    LEVELUP: 'CO_LEADER'
+    PROMOTE: 'CO_LEADER'
+    DEMOTE: 'CO_LEADER'
+    MANAGE_FRIENDLY_FIRE: 'LEADER'
+    KICK: 'CO_LEADER'
+    RENAME_GANG: 'LEADER'
+    SHOP: 'MOD'
+    INVSEE: 'MEMBER'
+    INVITE: 'CO_LEADER'
+    GANG_CHAT: 'RECRUIT'
+    ALLY_CHAT: 'RECRUIT'
+    ALERT: 'RECRUIT'
+    OWN_TITLE: 'RECRUIT'
+    MANAGE_TITLES: 'MOD'
+    MANAGE_PERMISSIONS: 'CO_LEADER'
+    VAULT: 'MEMBER'
+    SETHOME: 'MOD'
+    HOME: 'RECRUIT'
+    PURCHASE_UPGRADES: 'MOD'
+    CHANGE_DISPLAY: 'MOD'
+    BUILD_IN_CELL: 'MEMBER'
+
+
+displays:
+  default: #please keep default as an option, this is used for the default display
+    colour: '&f'
+  red:
+    colour: '&c'
+  aqua:
+    colour: '&b'
+  green:
+    colour: '&a'
+  blue:
+    colour: '&9'
+  yellow:
+    colour: '&e'
+  dark_gray:
+    colour: '&8'
+  light_purple:
+    colour: '&d'
+  gold:
+    colour: '&6'
+  dark_red:
+    colour: '&4'
+  # Hex Colors
+  sunset:
+    colour: '&#DB6A07'
+  rose:
+    colour: '&#FF5E78'
+  emerald:
+    colour: '&#50C878'
+  sky:
+    colour: '&#61A9FF'
+  lavender:
+    colour: '&#B57EDC'
+  mint:
+    colour: '&#98FF98'
+  coral:
+    colour: '&#FF7F50'
+  neon_green:
+    colour: '&#39FF14'
+  electric_blue:
+    colour: '&#7DF9FF'
+  pastel_orange:
+    colour: '&#FFB347'
+  baby_blue:
+    colour: '&#89CFF0'
+  royal_purple:
+    colour: '&#7851A9'
+  crimson:
+    colour: '&#DC143C'
+  steel:
+    colour: '&#4682B4'
+  peach:
+    colour: '&#FFE5B4'
+  indigo:
+    colour: '&#4B0082'
+  lime_punch:
+    colour: '&#D0FF14'
+  fire:
+    colour: '<gradient:#FF0000:#FF8C00>'
+  ocean:
+    colour: '<gradient:#0077BE:#00CED1>'
+  rainbow:
+    colour: '<rainbow>'
+  purple_dream:
+    colour: '<gradient:#9B59B6:#3498DB>'
+  gold_shimmer:
+    colour: '<gradient:#FFD700:#FFA500>'
+  ice:
+    colour: '<gradient:#A5F3FC:#0891B2>'
+  forest:
+    colour: '<gradient:#22C55E:#15803D>'
+
+#these are the arguments used in /gadmin setupgrade <gang> <upgrade> <value>
+#EXAMPLE: /gadmin setupgrade examplegang member_limit 5 - sets the gang member limit to 5 for the gang "examplegang"
+#NOTE: for coloured_description, the value must be 0 or 1, setting to 1 will allow access, 0 will deny access
+upgrades:
+  member_limit:
+    0:
+      value: 3
+    1:
+        cost: 50000000
+        cost_currency: 'tokens'
+        requirements:
+          level: 3
+        value: 5
+    2:
+        cost: 100000000
+        cost_currency: 'tokens'
+        requirements:
+          level: 5
+          blocksmined: 500000
+        value: 6
+  bank_limit:
+    0:
+      value: 150000000
+    1:
+        cost: 50000000
+        cost_currency: 'tokens'
+        requirements:
+          kills: 150
+        value: 15000000000
+    2:
+        cost: 5000000000
+        cost_currency: 'tokens'
+        requirements:
+          kills: 350
+          level: 10
+        value: 250000000000
+  coloured_description:
+    0:
+      value: 0
+    1:
+        cost: 50000000
+        cost_currency: 'money'
+        requirements:
+          level: 5
+        value: 1
+  weekly_quests:
+    0:
+      value: 0
+    1:
+      cost: 500000000
+      cost_currency: 'money'
+      requirements:
+        level: 8
+      value: 1
+  daily_quests:
+    0:
+      value: 0
+    1:
+      cost: 500000000
+      cost_currency: 'money'
+      requirements:
+        level: 9
+      value: 1
+  max_allies:
+    0:
+      value: 1
+    1:
+        cost: 50000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 2
+    2:
+        cost: 100000000
+        cost_currency: 'tokens'
+        requirements:
+          level: 25
+          blocksmined: 10000000
+        value: 3
+  cell_expansion:
+    0:
+      value: 0
+    1:
+      cost: 500
+      cost_currency: 'points'
+      requirements: []
+      value: 65 #this will set the cell radius to 65
+    2:
+      cost: 1500
+      cost_currency: 'points'
+      requirements: []
+      value: 100
+    3:
+      cost: 5000
+      cost_currency: 'points'
+      requirements: []
+      value: 125
+  vault:
+    0:
+      value: 0
+    1:
+        cost: 50000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 1
+    2:
+        cost: 100000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 2
+    3:
+        cost: 200000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 3
+    4:
+        cost: 500000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 4
+    5:
+        cost: 1000000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 5
+  home_limit:
+    0:
+      value: 1
+    1:
+        cost: 50000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 2
+    2:
+        cost: 100000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 3
+    3:
+        cost: 200000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 4
+    4:
+        cost: 500000000
+        cost_currency: 'tokens'
+        requirements: []
+        value: 5

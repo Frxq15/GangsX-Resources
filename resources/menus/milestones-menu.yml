@@ -1,0 +1,1423 @@
+MENUS:
+  BLOCKSMINED:
+    ROWS: 6
+    TITLE: "&8Mining Milestones"
+    ITEMS:
+      MM_1:
+        AMOUNT: 1
+        TYPE: 'blocksmined'
+        TARGET: 100
+        SLOT: 13
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 1
+          NAME: '&cMining #1'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e100 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a100'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f10x Gang Points'
+            - '&e&l • &f2x Diamonds &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'WOODEN_PICKAXE'
+          GLOW: true
+          AMOUNT: 1
+          NAME: '&aMining #1'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e100 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a100&f/&a100'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f10x Gang Points'
+            - '&e&l • &f2x Diamonds &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_2:
+        AMOUNT: 2
+        TYPE: 'blocksmined'
+        TARGET: 1000
+        SLOT: 14
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 2
+          NAME: '&cMining #2'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e1,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a1,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f20x Gang Points'
+            - '&e&l • &f4x Diamonds &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'WOODEN_PICKAXE'
+          GLOW: true
+          AMOUNT: 2
+          NAME: '&aMining #2'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e1,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a1,000&f/&a1,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f20x Gang Points'
+            - '&e&l • &f4x Diamonds &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_3:
+        AMOUNT: 3
+        TYPE: 'blocksmined'
+        TARGET: 10000
+        SLOT: 15
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 3
+          NAME: '&cMining #3'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e10,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a10,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f30x Gang Points'
+            - '&e&l • &f50x Gang Coins'
+            - '&e&l • &f16x Iron Ingots &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'WOODEN_PICKAXE'
+          GLOW: true
+          AMOUNT: 3
+          NAME: '&aMining #3'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e10,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a10,000&f/&a10,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f30x Gang Points'
+            - '&e&l • &f50x Gang Coins'
+            - '&e&l • &f16x Iron Ingots &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_4:
+        AMOUNT: 4
+        TYPE: 'blocksmined'
+        TARGET: 50000
+        SLOT: 22
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 4
+          NAME: '&cMining #4'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e50,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a50,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f40x Gang Points'
+            - '&e&l • &f100x Gang Coins'
+            - '&e&l • &f16x Gold Ingots &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'IRON_PICKAXE'
+          GLOW: true
+          AMOUNT: 4
+          NAME: '&aMining #4'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e50,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a50,000&f/&a50,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f40x Gang Points'
+            - '&e&l • &f100x Gang Coins'
+            - '&e&l • &f16x Gold Ingots &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_5:
+        AMOUNT: 5
+        TYPE: 'blocksmined'
+        TARGET: 150000
+        SLOT: 23
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 5
+          NAME: '&cMining #5'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e150,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a150,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f50x Gang Points'
+            - '&e&l • &f200x Gang Coins'
+            - '&e&l • &f2x Diamond Blocks &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'IRON_PICKAXE'
+          GLOW: true
+          AMOUNT: 5
+          NAME: '&aMining #5'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e150,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a150,000&f/&a150,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f50x Gang Points'
+            - '&e&l • &f200x Gang Coins'
+            - '&e&l • &f2x Diamond Blocks &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_6:
+        AMOUNT: 6
+        TYPE: 'blocksmined'
+        TARGET: 300000
+        SLOT: 24
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 6
+          NAME: '&cMining #6'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e300,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a300,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f75x Gang Points'
+            - '&e&l • &f300x Gang Coins'
+            - '&e&l • &f16x Emeralds &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'IRON_PICKAXE'
+          GLOW: true
+          AMOUNT: 6
+          NAME: '&aMining #6'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e300,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a300,000&f/&a300,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f75x Gang Points'
+            - '&e&l • &f300x Gang Coins'
+            - '&e&l • &f16x Emeralds &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_7:
+        AMOUNT: 7
+        TYPE: 'blocksmined'
+        TARGET: 500000
+        SLOT: 31
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 7
+          NAME: '&cMining #7'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e500,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a500,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f100x Gang Points'
+            - '&e&l • &f500x Gang Coins'
+            - '&e&l • &f4x Netherite Scrap &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'DIAMOND_PICKAXE'
+          GLOW: true
+          AMOUNT: 7
+          NAME: '&aMining #7'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e500,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a500,000&f/&a500,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f100x Gang Points'
+            - '&e&l • &f500x Gang Coins'
+            - '&e&l • &f4x Netherite Scrap &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_8:
+        AMOUNT: 8
+        TYPE: 'blocksmined'
+        TARGET: 1000000
+        SLOT: 32
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 8
+          NAME: '&cMining #8'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e1,000,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a1,000,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f150x Gang Points'
+            - '&e&l • &f750x Gang Coins'
+            - '&e&l • &f1x Netherite Ingot &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'DIAMOND_PICKAXE'
+          GLOW: true
+          AMOUNT: 8
+          NAME: '&aMining #8'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e1,000,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a1,000,000&f/&a1,000,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f150x Gang Points'
+            - '&e&l • &f750x Gang Coins'
+            - '&e&l • &f1x Netherite Ingot &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_9:
+        AMOUNT: 9
+        TYPE: 'blocksmined'
+        TARGET: 2000000
+        SLOT: 33
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 9
+          NAME: '&cMining #9'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e2,000,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a2,000,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f200x Gang Points'
+            - '&e&l • &f1000x Gang Coins'
+            - '&e&l • &f2x Netherite Ingots &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'DIAMOND_PICKAXE'
+          GLOW: true
+          AMOUNT: 9
+          NAME: '&aMining #9'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fMine &e2,000,000 &fblocks as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a2,000,000&f/&a2,000,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f200x Gang Points'
+            - '&e&l • &f1000x Gang Coins'
+            - '&e&l • &f2x Netherite Ingots &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+    MISC_ITEMS:
+      RETURN_GANG_MENU:
+        MATERIAL: 'ARROW'
+        SLOT: 50
+        NAME: '&cReturn'
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      BLOCKSMINED_MILESTONES:
+        MATERIAL: 'DIAMOND_PICKAXE'
+        SLOT: 0
+        OPEN_MENU: 'blocksmined' #Remove or set this to NONE to disable
+        NAME: '&aMining Milestones'
+        LORE:
+          - '&fView the milestones for blocks mined.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: true
+      KILLS_MILESTONES:
+        MATERIAL: 'IRON_SWORD'
+        SLOT: 9
+        OPEN_MENU: 'kills'
+        NAME: '&aKills Milestones'
+        LORE:
+          - '&fView the milestones for player kills.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: false
+      MOBKILLS_MILESTONES:
+        MATERIAL: 'BONE'
+        SLOT: 18
+        OPEN_MENU: 'mobkills'
+        NAME: '&aMob Kills Milestones'
+        LORE:
+          - '&fView the milestones for mob kills.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: false
+      PANE1:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 1
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE2:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 10
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE3:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 19
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE4:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 28
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE5:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 37
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE6:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 46
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+
+  KILLS:
+    ROWS: 6
+    TITLE: "&8Kills Milestones"
+    ITEMS:
+      KM_1:
+        AMOUNT: 1
+        TYPE: 'kills'
+        TARGET: 25
+        SLOT: 13
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 1
+          NAME: '&cKills #1'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e25 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a25'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f10x Gang Points'
+            - '&e&l • &f1x Golden Apple &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'WOODEN_SWORD'
+          GLOW: true
+          AMOUNT: 1
+          NAME: '&aKills #1'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e25 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a25&f/&a25'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f10x Gang Points'
+            - '&e&l • &f1x Golden Apple &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      KM_2:
+        AMOUNT: 2
+        TYPE: 'kills'
+        TARGET: 100
+        SLOT: 14
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 2
+          NAME: '&cKills #2'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e100 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a100'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f20x Gang Points'
+            - '&e&l • &f2x Golden Apples &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'WOODEN_SWORD'
+          GLOW: true
+          AMOUNT: 2
+          NAME: '&aKills #2'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e100 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a100&f/&a100'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f20x Gang Points'
+            - '&e&l • &f2x Golden Apples &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      KM_3:
+        AMOUNT: 3
+        TYPE: 'kills'
+        TARGET: 250
+        SLOT: 15
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 3
+          NAME: '&cKills #3'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e250 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a250'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f30x Gang Points'
+            - '&e&l • &f50x Gang Coins'
+            - '&e&l • &f32x Arrows &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'WOODEN_SWORD'
+          GLOW: true
+          AMOUNT: 3
+          NAME: '&aKills #3'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e250 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a250&f/&a250'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f30x Gang Points'
+            - '&e&l • &f50x Gang Coins'
+            - '&e&l • &f32x Arrows &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      KM_4:
+        AMOUNT: 4
+        TYPE: 'kills'
+        TARGET: 500
+        SLOT: 22
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 4
+          NAME: '&cKills #4'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e500 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a500'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f50x Gang Points'
+            - '&e&l • &f100x Gang Coins'
+            - '&e&l • &f16x EXP Bottles &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'IRON_SWORD'
+          GLOW: true
+          AMOUNT: 4
+          NAME: '&aKills #4'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e500 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a500&f/&a500'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f50x Gang Points'
+            - '&e&l • &f100x Gang Coins'
+            - '&e&l • &f16x EXP Bottles &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+      KM_5:
+        AMOUNT: 5
+        TYPE: 'kills'
+        TARGET: 1000
+        SLOT: 23
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 5
+          NAME: '&cKills #5'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e1,000 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a1,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f75x Gang Points'
+            - '&e&l • &f250x Gang Coins'
+            - '&e&l • &f16x Spectral Arrows &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'IRON_SWORD'
+          GLOW: true
+          AMOUNT: 5
+          NAME: '&aKills #5'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e1,000 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a1,000&f/&a1,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f75x Gang Points'
+            - '&e&l • &f250x Gang Coins'
+            - '&e&l • &f16x Spectral Arrows &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      KM_6:
+        AMOUNT: 6
+        TYPE: 'kills'
+        TARGET: 2500
+        SLOT: 24
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 6
+          NAME: '&cKills #6'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e2,500 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a2,500'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f100x Gang Points'
+            - '&e&l • &f300x Gang Coins'
+            - '&e&l • &f8x Golden Apples &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'IRON_SWORD'
+          GLOW: true
+          AMOUNT: 6
+          NAME: '&aKills #6'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e2,500 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a2,500&f/&a2,500'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f100x Gang Points'
+            - '&e&l • &f300x Gang Coins'
+            - '&e&l • &f8x Golden Apples &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      KM_7:
+        AMOUNT: 7
+        TYPE: 'kills'
+        TARGET: 5000
+        SLOT: 31
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 7
+          NAME: '&cKills #7'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e5,000 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a5,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f150x Gang Points'
+            - '&e&l • &f500x Gang Coins'
+            - '&e&l • &f1x Enchanted Book &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'DIAMOND_SWORD'
+          GLOW: true
+          AMOUNT: 7
+          NAME: '&aKills #7'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e5,000 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a5,000&f/&a5,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f150x Gang Points'
+            - '&e&l • &f500x Gang Coins'
+            - '&e&l • &f1x Enchanted Book &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      KM_8:
+        AMOUNT: 8
+        TYPE: 'kills'
+        TARGET: 10000
+        SLOT: 32
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 8
+          NAME: '&cKills #8'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e10,000 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a10,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f200x Gang Points'
+            - '&e&l • &f750x Gang Coins'
+            - '&e&l • &f1x Totem of Undying &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'DIAMOND_SWORD'
+          GLOW: true
+          AMOUNT: 8
+          NAME: '&aKills #8'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e10,000 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a10,000&f/&a10,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f200x Gang Points'
+            - '&e&l • &f750x Gang Coins'
+            - '&e&l • &f1x Totem of Undying &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      KM_9:
+        AMOUNT: 9
+        TYPE: 'kills'
+        TARGET: 25000
+        SLOT: 33
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 9
+          NAME: '&cKills #9'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e25,000 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a25,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f300x Gang Points'
+            - '&e&l • &f1,000x Gang Coins'
+            - '&e&l • &f1x Netherite Sword &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'DIAMOND_SWORD'
+          GLOW: true
+          AMOUNT: 9
+          NAME: '&aKills #9'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e25,000 &fplayers as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a25,000&f/&a25,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f300x Gang Points'
+            - '&e&l • &f1,000x Gang Coins'
+            - '&e&l • &f1x Netherite Sword &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+    MISC_ITEMS:
+      RETURN_GANG_MENU:
+        MATERIAL: 'ARROW'
+        SLOT: 50
+        NAME: '&cExit'
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      BLOCKSMINED_MILESTONES:
+        MATERIAL: 'DIAMOND_PICKAXE'
+        SLOT: 0
+        OPEN_MENU: 'blocksmined'
+        NAME: '&aMining Milestones'
+        LORE:
+          - '&fView the milestones for blocks mined.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: false
+      KILLS_MILESTONES:
+        MATERIAL: 'IRON_SWORD'
+        SLOT: 9
+        OPEN_MENU: 'kills'
+        NAME: '&aKills Milestones'
+        LORE:
+          - '&fView the milestones for player kills.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: true
+      MOBKILLS_MILESTONES:
+        MATERIAL: 'BONE'
+        SLOT: 18
+        OPEN_MENU: 'mobkills'
+        NAME: '&aMob Kills Milestones'
+        LORE:
+          - '&fView the milestones for mob kills.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: false
+      PANE1:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 1
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE2:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 10
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE3:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 19
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE4:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 28
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE5:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 37
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE6:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 46
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+
+  MOBKILLS:
+    ROWS: 6
+    TITLE: "&8Mob Kills Milestones"
+    ITEMS:
+      MM_1:
+        AMOUNT: 1
+        TYPE: 'mobkills'
+        TARGET: 50
+        SLOT: 13
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 1
+          NAME: '&cMob Kills #1'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e50 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a50'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f10x Gang Points'
+            - '&e&l • &f8x Cooked Beef &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'COOKED_BEEF'
+          GLOW: true
+          AMOUNT: 1
+          NAME: '&aMob Kills #1'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e50 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a50&f/&a50'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f10x Gang Points'
+            - '&e&l • &f8x Cooked Beef &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_2:
+        AMOUNT: 2
+        TYPE: 'mobkills'
+        TARGET: 200
+        SLOT: 14
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 2
+          NAME: '&cMob Kills #2'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e200 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a200'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f20x Gang Points'
+            - '&e&l • &f25x Gang Coins'
+            - '&e&l • &f16x Bones &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'BONE'
+          GLOW: true
+          AMOUNT: 2
+          NAME: '&aMob Kills #2'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e200 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a200&f/&a200'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f20x Gang Points'
+            - '&e&l • &f25x Gang Coins'
+            - '&e&l • &f16x Bones &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_3:
+        AMOUNT: 3
+        TYPE: 'mobkills'
+        TARGET: 500
+        SLOT: 15
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 3
+          NAME: '&cMob Kills #3'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e500 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a500'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f30x Gang Points'
+            - '&e&l • &f50x Gang Coins'
+            - '&e&l • &f32x Rotten Flesh &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'ROTTEN_FLESH'
+          GLOW: true
+          AMOUNT: 3
+          NAME: '&aMob Kills #3'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e500 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a500&f/&a500'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f30x Gang Points'
+            - '&e&l • &f50x Gang Coins'
+            - '&e&l • &f32x Rotten Flesh &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+
+      MM_4:
+        AMOUNT: 4
+        TYPE: 'mobkills'
+        TARGET: 1500
+        SLOT: 22
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 4
+          NAME: '&cMob Kills #4'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e1,500 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a1,500'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f50x Gang Points'
+            - '&e&l • &f100x Gang Coins'
+            - '&e&l • &f16x XP Bottles &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'EXPERIENCE_BOTTLE'
+          GLOW: true
+          AMOUNT: 4
+          NAME: '&aMob Kills #4'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e1,500 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a1,500&f/&a1,500'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f50x Gang Points'
+            - '&e&l • &f100x Gang Coins'
+            - '&e&l • &f16x XP Bottles &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+      MM_5:
+        AMOUNT: 5
+        TYPE: 'mobkills'
+        TARGET: 3000
+        SLOT: 23
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 5
+          NAME: '&cMob Kills #5'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e3,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a3,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f75x Gang Points'
+            - '&e&l • &f150x Gang Coins'
+            - '&e&l • &f1x Enchanted Book &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'ENCHANTED_BOOK'
+          GLOW: true
+          AMOUNT: 5
+          NAME: '&aMob Kills #5'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e3,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a3,000&f/&a3,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f75x Gang Points'
+            - '&e&l • &f150x Gang Coins'
+            - '&e&l • &f1x Enchanted Book &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+      MM_6:
+        AMOUNT: 6
+        TYPE: 'mobkills'
+        TARGET: 6000
+        SLOT: 24
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 6
+          NAME: '&cMob Kills #6'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e6,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a6,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f100x Gang Points'
+            - '&e&l • &f250x Gang Coins'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'GOLD_INGOT'
+          GLOW: true
+          AMOUNT: 6
+          NAME: '&aMob Kills #6'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e6,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a6,000&f/&a6,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f100x Gang Points'
+            - '&e&l • &f250x Gang Coins'
+            - ''
+            - '&eYou have completed this milestone.'
+      MM_7:
+        AMOUNT: 7
+        TYPE: 'mobkills'
+        TARGET: 10000
+        SLOT: 31
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 7
+          NAME: '&cMob Kills #7'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e10,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a10,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f125x Gang Points'
+            - '&e&l • &f350x Gang Coins'
+            - '&e&l • &f16x Nether Wart &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'NETHER_WART'
+          GLOW: true
+          AMOUNT: 7
+          NAME: '&aMob Kills #7'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e10,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a10,000&f/&a10,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f125x Gang Points'
+            - '&e&l • &f350x Gang Coins'
+            - '&e&l • &f16x Nether Wart &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+      MM_8:
+        AMOUNT: 8
+        TYPE: 'mobkills'
+        TARGET: 20000
+        SLOT: 32
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 8
+          NAME: '&cMob Kills #8'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e20,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a20,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f150x Gang Points'
+            - '&e&l • &f500x Gang Coins'
+            - '&e&l • &f1x Totem of Undying &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'TOTEM_OF_UNDYING'
+          GLOW: true
+          AMOUNT: 8
+          NAME: '&aMob Kills #8'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e20,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a20,000&f/&a20,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f150x Gang Points'
+            - '&e&l • &f500x Gang Coins'
+            - '&e&l • &f1x Totem of Undying &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+      MM_9:
+        AMOUNT: 9
+        TYPE: 'mobkills'
+        TARGET: 40000
+        SLOT: 33
+        INCOMPLETE:
+          MATERIAL: 'RED_STAINED_GLASS_PANE'
+          GLOW: false
+          AMOUNT: 9
+          NAME: '&cMob Kills #9'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e40,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &c%progress%&f/&a40,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f200x Gang Points'
+            - '&e&l • &f750x Gang Coins'
+            - '&e&l • &f1x Netherite Ingot &7(per member)'
+            - ''
+            - '&cYou have not completed this milestone.'
+        COMPLETE:
+          MATERIAL: 'NETHERITE_INGOT'
+          GLOW: true
+          AMOUNT: 9
+          NAME: '&aMob Kills #9'
+          LORE:
+            - ''
+            - '&6Objective:'
+            - '&e | &fKill &e40,000 &fmobs as a gang'
+            - ''
+            - '&6Progress:'
+            - '&e | &a40,000&f/&a40,000'
+            - ''
+            - '&6Rewards:'
+            - '&e&l • &f200x Gang Points'
+            - '&e&l • &f750x Gang Coins'
+            - '&e&l • &f1x Netherite Ingot &7(per member)'
+            - ''
+            - '&eYou have completed this milestone.'
+    MISC_ITEMS:
+      RETURN_GANG_MENU:
+        MATERIAL: 'ARROW'
+        SLOT: 50
+        NAME: '&cExit'
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      BLOCKSMINED_MILESTONES:
+        MATERIAL: 'DIAMOND_PICKAXE'
+        SLOT: 0
+        OPEN_MENU: 'blocksmined'
+        NAME: '&aMining Milestones'
+        LORE:
+          - '&fView the milestones for blocks mined.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: false
+      KILLS_MILESTONES:
+        MATERIAL: 'IRON_SWORD'
+        SLOT: 9
+        OPEN_MENU: 'kills'
+        NAME: '&aKills Milestones'
+        LORE:
+          - '&fView the milestones for player kills.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: false
+      MOBKILLS_MILESTONES:
+        MATERIAL: 'BONE'
+        SLOT: 18
+        OPEN_MENU: 'mobkills'
+        NAME: '&aMob Kills Milestones'
+        LORE:
+          - '&fView the milestones for mob kills.'
+          - ''
+          - '&e&lClick &fto open this menu.'
+        GLOW: true
+      PANE1:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 1
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE2:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 10
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE3:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 19
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE4:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 28
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE5:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 37
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false
+      PANE6:
+        MATERIAL: 'BLACK_STAINED_GLASS_PANE'
+        SLOT: 46
+        NAME: ''
+        LORE: [ ]
+        AMOUNT: 1
+        GLOW: false

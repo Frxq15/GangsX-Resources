@@ -1,0 +1,110 @@
+TITLE: '&8%player%''s Inventory'
+ROWS: 6
+INVENTORY_START_SLOT: 18 #start slot of the player's inventory, this is where the items will be displayed.
+ITEMS: #default items if armor is not being worn / slot is not filled, items will default to the armor itemstack if they are.
+  SHIELD:
+    SLOT: 0
+    MATERIAL: SHIELD
+    GLOW: false
+    NAME: '&cNo item off hand'
+    LORE:
+      - '&7This player has no item in their off hand.'
+  HELMET:
+    SLOT: 2
+    MATERIAL: BARRIER
+    GLOW: false
+    NAME: '&cNot wearing a helmet'
+    LORE:
+      - '&7This player has no helmet active.'
+  CHESTPLATE:
+    SLOT: 3
+    MATERIAL: BARRIER
+    GLOW: false
+    NAME: '&cNot wearing a chestplate'
+    LORE:
+      - '&7This player has no chestplate active.'
+  LEGGINGS:
+    SLOT: 4
+    MATERIAL: BARRIER
+    GLOW: false
+    NAME: '&cNot wearing leggings'
+    LORE:
+      - '&7This player has no leggings active.'
+  BOOTS:
+    SLOT: 5
+    MATERIAL: BARRIER
+    GLOW: false
+    NAME: '&cNot wearing boots'
+    LORE:
+      - '&7This player has no boots active.'
+  IN_HAND:
+    SLOT: 8
+    MATERIAL: BARRIER
+    GLOW: false
+    NAME: '&cNo held item'
+    LORE:
+      - '&7This player is not holding an item.'
+MISC_ITEMS:
+  1:
+    SLOT: 9
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  2:
+    SLOT: 10
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  3:
+    SLOT: 11
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  4:
+    SLOT: 12
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  5:
+    SLOT: 13
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  6:
+    SLOT: 14
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  7:
+    SLOT: 15
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  8:
+    SLOT: 16
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []
+  9:
+    SLOT: 17
+    MATERIAL: BLACK_STAINED_GLASS_PANE
+    AMOUNT: 1
+    GLOW: false
+    NAME: ''
+    LORE: []

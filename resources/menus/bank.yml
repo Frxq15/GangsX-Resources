@@ -1,0 +1,35 @@
+ROWS: 4
+TITLE: "&8Gang Bank"
+MISC_ITEMS:
+  POINTS:
+    SLOT: 10
+    MATERIAL: PURPLE_CANDLE
+    AMOUNT: 1
+    NAME: "&dPoints"
+    GLOW: false
+    LORE:
+      - '&fYour gang has &d%points% &fpoints.'
+  COINS:
+    SLOT: 11
+    MATERIAL: GOLD_INGOT
+    AMOUNT: 1
+    NAME: "&6Coins"
+    GLOW: false
+    LORE:
+      - '&fYour gang has &6%coins% &fcoins.'
+  TOKENS:
+    SLOT: 12
+    MATERIAL: NETHER_STAR
+    AMOUNT: 1
+    NAME: "&bTokens"
+    GLOW: false
+    LORE:
+      - '&fYour gang has &b%tokens% &ftokens.'
+  EXAMPLE:
+    SLOT: 12
+    MATERIAL: CHEST
+    AMOUNT: 1
+    NAME: "&bExample Currency"
+    GLOW: false
+    LORE:
+      - '&fYour gang has &b%example% &fexample currency.'

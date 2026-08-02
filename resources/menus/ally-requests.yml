@@ -1,0 +1,51 @@
+ROWS: 4
+TITLE: "&8Ally Requests"
+NO_REQUESTS_ITEM: true #if no requests are pending, should we display this item?
+START_SLOT: 0 #this is where the first request will be placed, the rest will be filled in from there
+ITEMS:
+  REQUEST_SENT:
+    MATERIAL: ORANGE_DYE
+    AMOUNT: 1
+    NAME: "&6&lRequested &e%gang%"
+    GLOW: false
+    LORE:
+      - '&fThis request is pending approval from the gang.'
+      - ''
+      - '&eInformation:'
+      - '&e&l • &fSent To: &b%gang%'
+      - '&e&l • &fSent By: &a%requester%'
+      - '&e&l • &fStatus: &6Pending Confirmation'
+      - ''
+      - '&e&lClick &fto cancel this request.'
+  REQUEST_PENDING:
+    MATERIAL: PURPLE_DYE
+    AMOUNT: 1
+    NAME: "&d&lPending &e%gang%"
+    GLOW: false
+    LORE:
+      - '&fThis request is pending approval from you.'
+      - ''
+      - '&eInformation:'
+      - '&e&l • &fFrom: &b%gang%'
+      - '&e&l • &fSent By: &a%requester%'
+      - '&e&l • &fStatus: &6Pending Confirmation'
+      - ''
+      - '&e&lClick &fto accept this request.'
+  NO_REQUESTS:
+    MATERIAL: BARRIER
+    SLOT: 13
+    AMOUNT: 1
+    NAME: "&cNo pending requests :("
+    GLOW: false
+    LORE:
+      - ''
+      - '&b&l • &fYou have not sent or received an ally request from any gang,'
+      - '&fuse &d/g ally <gang> &fto partner with other gangs.'
+MISC_ITEMS:
+  CLOSE_MENU:
+    SLOT: 31
+    GLOW: false
+    AMOUNT: 1
+    NAME: '&cExit'
+    LORE: []
+    MATERIAL: 'ARROW'

@@ -1,0 +1,162 @@
+# Providers define how boosts are applied to different plugins
+# Each provider hooks into a specific plugin's events to apply multipliers
+#
+# Available provider types:
+#   - edprison: Hooks into EdPrison currencies
+#   - gangsx: Internal GangsX currencies (coins/points)
+#
+providers:
+  gangsx:
+    type: gangsx
+    enabled: true
+    currencies:
+      - points
+      - coins
+  edprison:
+    type: edprison
+    enabled: true
+    # Currencies this provider can boost (must match EdPrison currency names)
+    currencies:
+      - tokens
+      - gems
+      - money
+
+# Boost configuration
+# Each boost can apply multipliers to one or more currencies
+#
+#   boost_name:
+#     display_name: "Display Name"  # Name shown in menus
+#     levels:
+#       <level>:
+#         multipliers:               # Currency -> multiplier value
+#           <currency>: <multiplier>
+#         cost: <amount>
+#         cost_currency: <currency>
+#         level_requirement: <gang_level>
+#
+boosts:
+  # Internal GangsX currency boosts
+  coins:
+    display_name: "&6Coins Boost"
+    levels:
+      0:
+        multipliers:
+          coins: 0.0
+        cost: 0
+        cost_currency: coins
+        level_requirement: 0
+      1:
+        multipliers:
+          coins: 0.5 # 50% boost (1.5x coins)
+        cost: 5000
+        cost_currency: coins
+        level_requirement: 3
+      2:
+        multipliers:
+          coins: 0.8 # 80% boost (1.8x coins)
+        cost: 15000
+        cost_currency: coins
+        level_requirement: 5
+      3:
+        multipliers:
+          coins: 1.0 # 100% boost (double coins)
+        cost: 50000
+        cost_currency: coins
+        level_requirement: 10
+
+  points:
+    display_name: "&bPoints Boost"
+    levels:
+      0:
+        multipliers:
+          points: 0.0
+        cost: 0
+        cost_currency: points
+        level_requirement: 0
+      1:
+        multipliers:
+          points: 0.5
+        cost: 500
+        cost_currency: points
+        level_requirement: 3
+      2:
+        multipliers:
+          points: 0.8
+        cost: 1500
+        cost_currency: points
+        level_requirement: 5
+      3:
+        multipliers:
+          points: 1.0
+        cost: 5000
+        cost_currency: points
+        level_requirement: 10
+
+  # EdPrison currency boosts
+  tokens:
+    display_name: "&eTokens Boost"
+    levels:
+      0:
+        multipliers:
+          tokens: 0.0
+        cost: 0
+        cost_currency: tokens
+        level_requirement: 0
+      1:
+        multipliers:
+          tokens: 1.0
+        cost: 10000000
+        cost_currency: tokens
+        level_requirement: 5
+      2:
+        multipliers:
+          tokens: 2.0
+        cost: 50000000
+        cost_currency: tokens
+        level_requirement: 10
+      3:
+        multipliers:
+          tokens: 3.0
+        cost: 100000000
+        cost_currency: tokens
+        level_requirement: 15
+      4:
+        multipliers:
+          tokens: 4.0
+        cost: 1000000000
+        cost_currency: tokens
+        level_requirement: 20
+      5:
+        multipliers:
+          tokens: 10.0
+        cost: 10000000000
+        cost_currency: tokens
+        level_requirement: 25
+
+  gems:
+    display_name: "&dGems Boost"
+    levels:
+      0:
+        multipliers:
+          gems: 0.0
+        cost: 0
+        cost_currency: gems
+        level_requirement: 0
+      1:
+        multipliers:
+          gems: 1.0
+        cost: 10000000
+        cost_currency: gems
+        level_requirement: 5
+      2:
+        multipliers:
+          gems: 5.0
+        cost: 50000000
+        cost_currency: gems
+        level_requirement: 10
+      3:
+        multipliers:
+          gems: 10.0
+        cost: 100000000
+        cost_currency: gems
+        level_requirement: 15

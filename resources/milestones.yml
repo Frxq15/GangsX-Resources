@@ -1,0 +1,374 @@
+### Gang Milestones Configuration
+# This file defines the milestones for gangs, including requirements, rewards, and messages.
+# You can use the following statistics for milestones: blocksmined, kills, mobkills, deaths, kothwins, blocksplaced
+sound:
+  enabled: true
+  type: 'ENTITY_PLAYER_LEVELUP'
+blocksmined:
+  1:
+    requirement: 100
+    reward_commands:
+      - 'ga executeforall %gang% give %player% diamond 2'
+      - 'ga addstat %gang% points 10'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #1 &fand received:'
+      - '&b&l • &f10x Gang Points'
+      - '&b&l • &f2x Diamonds &7(per member)'
+      - ''
+  2:
+    requirement: 1000
+    reward_commands:
+      - 'ga executeforall %gang% give %player% diamond 4'
+      - 'ga addstat %gang% points 20'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #2 &fand received:'
+      - '&b&l • &f20x Gang Points'
+      - '&b&l • &f4x Diamonds &7(per member)'
+      - ''
+  3:
+    requirement: 10000
+    reward_commands:
+      - 'ga addstat %gang% points 30'
+      - 'ga addstat %gang% coins 50'
+      - 'ga executeforall %gang% give %player% iron_ingot 16'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #3 &fand received:'
+      - '&b&l • &f30x Gang Points'
+      - '&b&l • &f50x Gang Coins'
+      - '&b&l • &f16x Iron Ingots &7(per member)'
+      - ''
+  4:
+    requirement: 50000
+    reward_commands:
+      - 'ga addstat %gang% points 40'
+      - 'ga addstat %gang% coins 100'
+      - 'ga executeforall %gang% give %player% gold_ingot 16'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #4 &fand received:'
+      - '&b&l • &f40x Gang Points'
+      - '&b&l • &f100x Gang Coins'
+      - '&b&l • &f16x Gold Ingots &7(per member)'
+      - ''
+  5:
+    requirement: 150000
+    reward_commands:
+      - 'ga addstat %gang% points 50'
+      - 'ga addstat %gang% coins 200'
+      - 'ga executeforall %gang% give %player% diamond_block 2'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #5 &fand received:'
+      - '&b&l • &f50x Gang Points'
+      - '&b&l • &f200x Gang Coins'
+      - '&b&l • &f2x Diamond Blocks &7(per member)'
+      - ''
+  6:
+    requirement: 300000
+    reward_commands:
+      - 'ga addstat %gang% points 75'
+      - 'ga addstat %gang% coins 300'
+      - 'ga executeforall %gang% give %player% emerald 16'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #6 &fand received:'
+      - '&b&l • &f75x Gang Points'
+      - '&b&l • &f300x Gang Coins'
+      - '&b&l • &f16x Emeralds &7(per member)'
+      - ''
+  7:
+    requirement: 500000
+    reward_commands:
+      - 'ga addstat %gang% points 100'
+      - 'ga addstat %gang% coins 500'
+      - 'ga executeforall %gang% give %player% netherite_scrap 4'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #7 &fand received:'
+      - '&b&l • &f100x Gang Points'
+      - '&b&l • &f500x Gang Coins'
+      - '&b&l • &f4x Netherite Scrap &7(per member)'
+      - ''
+  8:
+    requirement: 1000000
+    reward_commands:
+      - 'ga addstat %gang% points 150'
+      - 'ga addstat %gang% coins 750'
+      - 'ga executeforall %gang% give %player% netherite_ingot 1'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #8 &fand received:'
+      - '&b&l • &f150x Gang Points'
+      - '&b&l • &f750x Gang Coins'
+      - '&b&l • &f1x Netherite Ingot &7(per member)'
+      - ''
+  9:
+    requirement: 2000000
+    reward_commands:
+      - 'ga addstat %gang% points 200'
+      - 'ga addstat %gang% coins 1000'
+      - 'ga executeforall %gang% give %player% netherite_ingot 2'
+    reward_messages:
+      - ''
+      - '&a&lGang Milestone Complete'
+      - '&fYour gang completed &eMining Milestone #9 &fand received:'
+      - '&b&l • &f200x Gang Points'
+      - '&b&l • &f1000x Gang Coins'
+      - '&b&l • &f2x Netherite Ingots &7(per member)'
+      - ''
+kills:
+  1:
+    requirement: 25
+    reward_commands:
+      - 'ga addstat %gang% points 10'
+      - 'ga executeforall %gang% give %player% golden_apple 1'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #1 &fand received:'
+      - '&b&l • &f10x Gang Points'
+      - '&b&l • &f1x Golden Apple &7(per member)'
+      - ''
+  2:
+    requirement: 100
+    reward_commands:
+      - 'ga addstat %gang% points 20'
+      - 'ga executeforall %gang% give %player% golden_apple 2'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #2 &fand received:'
+      - '&b&l • &f20x Gang Points'
+      - '&b&l • &f2x Golden Apples &7(per member)'
+      - ''
+  3:
+    requirement: 250
+    reward_commands:
+      - 'ga addstat %gang% points 30'
+      - 'ga addstat %gang% coins 50'
+      - 'ga executeforall %gang% give %player% arrow 32'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #3 &fand received:'
+      - '&b&l • &f30x Gang Points'
+      - '&b&l • &f50x Gang Coins'
+      - '&b&l • &f32x Arrows &7(per member)'
+      - ''
+  4:
+    requirement: 500
+    reward_commands:
+      - 'ga addstat %gang% points 50'
+      - 'ga addstat %gang% coins 100'
+      - 'ga executeforall %gang% give %player% experience_bottle 16'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #4 &fand received:'
+      - '&b&l • &f50x Gang Points'
+      - '&b&l • &f100x Gang Coins'
+      - '&b&l • &f16x XP Bottles &7(per member)'
+      - ''
+  5:
+    requirement: 1000
+    reward_commands:
+      - 'ga addstat %gang% points 75'
+      - 'ga addstat %gang% coins 200'
+      - 'ga executeforall %gang% give %player% iron_sword 1'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #5 &fand received:'
+      - '&b&l • &f75x Gang Points'
+      - '&b&l • &f200x Gang Coins'
+      - '&b&l • &f1x Iron Sword &7(per member)'
+      - ''
+  6:
+    requirement: 2500
+    reward_commands:
+      - 'ga addstat %gang% points 100'
+      - 'ga addstat %gang% coins 300'
+      - 'ga executeforall %gang% give %player% enchanted_golden_apple 1'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #6 &fand received:'
+      - '&b&l • &f100x Gang Points'
+      - '&b&l • &f300x Gang Coins'
+      - '&b&l • &f1x Enchanted Golden Apple &7(per member)'
+      - ''
+  7:
+    requirement: 5000
+    reward_commands:
+      - 'ga addstat %gang% points 150'
+      - 'ga addstat %gang% coins 500'
+      - 'ga executeforall %gang% give %player% netherite_scrap 2'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #7 &fand received:'
+      - '&b&l • &f150x Gang Points'
+      - '&b&l • &f500x Gang Coins'
+      - '&b&l • &f2x Netherite Scrap &7(per member)'
+      - ''
+  8:
+    requirement: 10000
+    reward_commands:
+      - 'ga addstat %gang% points 200'
+      - 'ga addstat %gang% coins 750'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #8 &fand received:'
+      - '&b&l • &f200x Gang Points'
+      - '&b&l • &f750x Gang Coins'
+      - ''
+  9:
+    requirement: 20000
+    reward_commands:
+      - 'ga addstat %gang% points 300'
+      - 'ga addstat %gang% coins 1000'
+      - 'ga executeforall %gang% give %player% netherite_ingot 1'
+    reward_messages:
+      - ''
+      - '&c&lGang Milestone Complete'
+      - '&fYour gang completed &eKills Milestone #9 &fand received:'
+      - '&b&l • &f300x Gang Points'
+      - '&b&l • &f1000x Gang Coins'
+      - '&b&l • &f1x Netherite Ingot &7(per member)'
+      - ''
+mobkills:
+  1:
+    requirement: 50
+    reward_commands:
+      - 'ga addstat %gang% points 10'
+      - 'ga executeforall %gang% give %player% cooked_beef 8'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #1 &fand received:'
+      - '&b&l • &f10x Gang Points'
+      - '&b&l • &f8x Cooked Beef &7(per member)'
+      - ''
+  2:
+    requirement: 200
+    reward_commands:
+      - 'ga addstat %gang% points 20'
+      - 'ga addstat %gang% coins 25'
+      - 'ga executeforall %gang% give %player% bone 16'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #2 &fand received:'
+      - '&b&l • &f20x Gang Points'
+      - '&b&l • &f25x Gang Coins'
+      - '&b&l • &f16x Bones &7(per member)'
+      - ''
+  3:
+    requirement: 500
+    reward_commands:
+      - 'ga addstat %gang% points 30'
+      - 'ga addstat %gang% coins 50'
+      - 'ga executeforall %gang% give %player% rotten_flesh 32'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #3 &fand received:'
+      - '&b&l • &f30x Gang Points'
+      - '&b&l • &f50x Gang Coins'
+      - '&b&l • &f32x Rotten Flesh &7(per member)'
+      - ''
+  4:
+    requirement: 1500
+    reward_commands:
+      - 'ga addstat %gang% points 50'
+      - 'ga addstat %gang% coins 100'
+      - 'ga executeforall %gang% give %player% experience_bottle 16'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #4 &fand received:'
+      - '&b&l • &f50x Gang Points'
+      - '&b&l • &f100x Gang Coins'
+      - '&b&l • &f16x XP Bottles &7(per member)'
+      - ''
+  5:
+    requirement: 3000
+    reward_commands:
+      - 'ga addstat %gang% points 75'
+      - 'ga addstat %gang% coins 150'
+      - 'ga executeforall %gang% give %player% enchanted_book 1'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #5 &fand received:'
+      - '&b&l • &f75x Gang Points'
+      - '&b&l • &f150x Gang Coins'
+      - '&b&l • &f1x Enchanted Book &7(per member)'
+      - ''
+  6:
+    requirement: 6000
+    reward_commands:
+      - 'ga addstat %gang% points 100'
+      - 'ga addstat %gang% coins 250'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #6 &fand received:'
+      - '&b&l • &f100x Gang Points'
+      - '&b&l • &f250x Gang Coins'
+      - ''
+  7:
+    requirement: 10000
+    reward_commands:
+      - 'ga addstat %gang% points 125'
+      - 'ga addstat %gang% coins 350'
+      - 'ga executeforall %gang% give %player% nether_wart 16'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #7 &fand received:'
+      - '&b&l • &f125x Gang Points'
+      - '&b&l • &f350x Gang Coins'
+      - '&b&l • &f16x Nether Wart &7(per member)'
+      - ''
+  8:
+    requirement: 20000
+    reward_commands:
+      - 'ga addstat %gang% points 150'
+      - 'ga addstat %gang% coins 500'
+      - 'ga executeforall %gang% give %player% totem_of_undying 1'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #8 &fand received:'
+      - '&b&l • &f150x Gang Points'
+      - '&b&l • &f500x Gang Coins'
+      - '&b&l • &f1x Totem of Undying &7(per member)'
+      - ''
+  9:
+    requirement: 40000
+    reward_commands:
+      - 'ga addstat %gang% points 200'
+      - 'ga addstat %gang% coins 750'
+      - 'ga executeforall %gang% give %player% netherite_ingot 1'
+    reward_messages:
+      - ''
+      - '&2&lGang Milestone Complete'
+      - '&fYour gang completed &eMob Kills Milestone #9 &fand received:'
+      - '&b&l • &f200x Gang Points'
+      - '&b&l • &f750x Gang Coins'
+      - '&b&l • &f1x Netherite Ingot &7(per member)'
+      - ''
+

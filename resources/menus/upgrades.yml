@@ -1,0 +1,475 @@
+ROWS: 5
+TITLE: "&8Gang Upgrades"
+ITEMS:
+  MEMBER_LIMIT:
+    0:
+      MATERIAL: 'DIAMOND'
+      SLOT: 10
+      AMOUNT: 1
+      NAME: "&6Member Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &e%value% &fmembers.'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l ⛃ &fCost: &e%cost% %cost_currency%'
+        - '&e&l ↑ &fUpgrade: &e%new_value% Members'
+        - ''
+        - '&6Requirements:'
+        - '&e&l 📊 &fLevel: &e3'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'DIAMOND'
+      SLOT: 10
+      AMOUNT: 1
+      NAME: "&6Member Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &e%value% &fmembers.'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l ⛃ &fCost: &e%cost% %cost_currency%'
+        - '&e&l ↑ &fUpgrade: &e%new_value% Members'
+        - ''
+        - '&6Requirements:'
+        - '&e&l 📊 &fLevel: &e5'
+        - '&e&l ⛏ &fMined: &e500k'
+        - ''
+        - '&eClick to purchase this upgrade'
+    2:
+      MATERIAL: 'DIAMOND'
+      SLOT: 10
+      AMOUNT: 1
+      NAME: "&6Member Limit"
+      GLOW: true
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &e%value% &fmembers.'
+        - ''
+        - '&aYou have reached the maximum member limit.'
+  BANK_LIMIT:
+    0:
+      MATERIAL: 'GOLD_INGOT'
+      SLOT: 12
+      AMOUNT: 1
+      NAME: "&5Bank Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can hold a maximum'
+        - '&fof &d%value% &fin your bank.'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l ⛃ &fCost: &d%cost% %cost_currency%'
+        - '&d&l ↑ &fUpgrade: &d%new_value% Limit'
+        - ''
+        - '&5Requirements:'
+        - '&d&l ⚔ &fKills: &d150'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'GOLD_INGOT'
+      SLOT: 12
+      AMOUNT: 1
+      NAME: "&5Bank Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can hold a maximum'
+        - '&fof &d%value% &fin your bank.'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l ⛃ &fCost: &d%cost% %cost_currency%'
+        - '&d&l ↑ &fUpgrade: &d%new_value% Limit'
+        - ''
+        - '&5Requirements:'
+        - '&d&l 📊 &fLevel: &d10'
+        - '&d&l ⚔ &fKills: &d350'
+        - ''
+        - '&eClick to purchase this upgrade'
+    2:
+      MATERIAL: 'GOLD_INGOT'
+      SLOT: 12
+      AMOUNT: 1
+      NAME: "&5Bank Limit"
+      GLOW: true
+      LORE:
+        - '&fYour gang can hold a maximum'
+        - '&fof &d%value% &fin your bank.'
+        - ''
+        - '&aYou have reached the maximum bank limit.'
+  COLOURED_DESCRIPTION:
+    0:
+      MATERIAL: 'NAME_TAG'
+      SLOT: 14
+      AMOUNT: 1
+      NAME: "&cC&6o&el&ao&3u&9r&5e&cd &eD&ae&3s&9c&5r&ci&6p&et&ai&3o&9n"
+      GLOW: false
+      LORE:
+        - '&fUnlock the ability to use colour codes'
+        - '&fin your gang description.'
+        - ''
+        - '&4Upgrade:'
+        - '&c&l ⛃ &fCost: &c%cost% %cost_currency%'
+        - ''
+        - '&4Requirements:'
+        - '&c&l 📊 &fLevel: &c5'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'NAME_TAG'
+      SLOT: 14
+      AMOUNT: 1
+      NAME: "&cC&6o&el&ao&3u&9r&5e&cd &eD&ae&3s&9c&5r&ci&6p&et&ai&3o&9n"
+      GLOW: false
+      LORE:
+        - '&fUnlock the ability to use colour codes'
+        - '&fin your gang description.'
+        - ''
+        - '&eYou have already unlocked this upgrade.'
+  VAULT:
+    0:
+      MATERIAL: 'CHEST'
+      SLOT: 16
+      AMOUNT: 1
+      NAME: "&3Gang Vault"
+      GLOW: false
+      LORE:
+        - '&fYour gang vault is'
+        - '&fcurrently &b%value% &frows.'
+        - ''
+        - '&3Upgrade:'
+        - '&b&l ⛃ &fCost: &b%cost% %cost_currency%'
+        - '&b&l ↑ &fUpgrade: &b%new_value% Rows'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'CHEST'
+      SLOT: 16
+      AMOUNT: 1
+      NAME: "&3Gang Vault"
+      GLOW: false
+      LORE:
+        - '&fYour gang vault is'
+        - '&fcurrently &b%value% &frows.'
+        - ''
+        - '&3Upgrade:'
+        - '&b&l ⛃ &fCost: &b%cost% %cost_currency%'
+        - '&b&l ↑ &fUpgrade: &b%new_value% Rows'
+        - ''
+        - '&eClick to purchase this upgrade'
+    2:
+      MATERIAL: 'CHEST'
+      SLOT: 16
+      AMOUNT: 1
+      NAME: "&3Gang Vault"
+      GLOW: false
+      LORE:
+        - '&fYour gang vault is'
+        - '&fcurrently &b%value% &frows.'
+        - ''
+        - '&3Upgrade:'
+        - '&b&l ⛃ &fCost: &b%cost% %cost_currency%'
+        - '&b&l ↑ &fUpgrade: &b%new_value% Rows'
+        - ''
+        - '&eClick to purchase this upgrade'
+    3:
+      MATERIAL: 'CHEST'
+      SLOT: 16
+      AMOUNT: 1
+      NAME: "&3Gang Vault"
+      GLOW: false
+      LORE:
+        - '&fYour gang vault is'
+        - '&fcurrently &b%value% &frows.'
+        - ''
+        - '&3Upgrade:'
+        - '&b&l ⛃ &fCost: &b%cost% %cost_currency%'
+        - '&b&l ↑ &fUpgrade: &b%new_value% Rows'
+        - ''
+        - '&eClick to purchase this upgrade'
+    4:
+      MATERIAL: 'CHEST'
+      SLOT: 16
+      AMOUNT: 1
+      NAME: "&3Gang Vault"
+      GLOW: false
+      LORE:
+        - '&fYour gang vault is'
+        - '&fcurrently &b%value% &frows.'
+        - ''
+        - '&3Upgrade:'
+        - '&b&l ⛃ &fCost: &b%cost% %cost_currency%'
+        - '&b&l ↑ &fUpgrade: &b%new_value% Rows'
+        - ''
+        - '&eClick to purchase this upgrade'
+    5:
+      MATERIAL: 'CHEST'
+      SLOT: 16
+      AMOUNT: 1
+      NAME: "&3Gang Vault"
+      GLOW: true
+      LORE:
+        - '&fYour gang vault is'
+        - '&fcurrently &b%value% &frows.'
+        - ''
+        - '&aYou have reached the maximum member limit.'
+  MAX_ALLIES:
+    0:
+      MATERIAL: 'PURPLE_CARPET'
+      SLOT: 28
+      AMOUNT: 1
+      NAME: "&5Ally Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &d%value% &fallies.'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l ⛃ &fCost: &d%cost% %cost_currency%'
+        - '&d&l ↑ &fUpgrade: &d%new_value% Allies'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'PURPLE_CARPET'
+      SLOT: 28
+      AMOUNT: 1
+      NAME: "&5Ally Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &d%value% &fallies.'
+        - ''
+        - '&5Upgrade:'
+        - '&d&l ⛃ &fCost: &d%cost% %cost_currency%'
+        - '&d&l ↑ &fUpgrade: &d%new_value% Allies'
+        - ''
+        - '&5Requirements:'
+        - '&d&l 📊 &fLevel: &d25'
+        - '&d&l ⛏ &fMined: &d1m'
+        - ''
+        - '&eClick to purchase this upgrade'
+    2:
+      MATERIAL: 'DIAMOND'
+      SLOT: 28
+      AMOUNT: 1
+      NAME: "&5Ally Limit"
+      GLOW: true
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &d%value% &fallies.'
+        - ''
+        - '&aYou have reached the maximum ally limit.'
+  HOME_LIMIT:
+    0:
+      MATERIAL: 'RED_BED'
+      SLOT: 30
+      AMOUNT: 1
+      NAME: "&2Home Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &a%value% &fhomes.'
+        - ''
+        - '&2Upgrade:'
+        - '&a&l ⛃ &fCost: &a%cost% %cost_currency%'
+        - '&a&l ↑ &fUpgrade: &a%new_value% Homes'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'RED_BED'
+      SLOT: 30
+      AMOUNT: 1
+      NAME: "&2Home Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &a%value% &fhomes.'
+        - ''
+        - '&2Upgrade:'
+        - '&a&l ⛃ &fCost: &a%cost% %cost_currency%'
+        - '&a&l ↑ &fUpgrade: &a%new_value% Homes'
+        - ''
+        - '&eClick to purchase this upgrade'
+    2:
+      MATERIAL: 'RED_BED'
+      SLOT: 30
+      AMOUNT: 1
+      NAME: "&2Home Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &a%value% &fhomes.'
+        - ''
+        - '&2Upgrade:'
+        - '&a&l ⛃ &fCost: &a%cost% %cost_currency%'
+        - '&a&l ↑ &fUpgrade: &a%new_value% Homes'
+        - ''
+        - '&eClick to purchase this upgrade'
+    3:
+      MATERIAL: 'RED_BED'
+      SLOT: 30
+      AMOUNT: 1
+      NAME: "&2Home Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &a%value% &fhomes.'
+        - ''
+        - '&2Upgrade:'
+        - '&a&l ⛃ &fCost: &a%cost% %cost_currency%'
+        - '&a&l ↑ &fUpgrade: &a%new_value% Homes'
+        - ''
+        - '&eClick to purchase this upgrade'
+    4:
+      MATERIAL: 'RED_BED'
+      SLOT: 30
+      AMOUNT: 1
+      NAME: "&2Home Limit"
+      GLOW: false
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &a%value% &fhomes.'
+        - ''
+        - '&2Upgrade:'
+        - '&a&l ⛃ &fCost: &a%cost% %cost_currency%'
+        - '&a&l ↑ &fUpgrade: &a%new_value% Homes'
+        - ''
+        - '&eClick to purchase this upgrade'
+    5:
+      MATERIAL: 'RED_BED'
+      SLOT: 30
+      AMOUNT: 1
+      NAME: "&2Home Limit"
+      GLOW: true
+      LORE:
+        - '&fYour gang can have a maximum'
+        - '&fof &a%value% &fhomes.'
+        - ''
+        - '&aYou have reached the maximum home limit.'
+  DAILY_QUESTS:
+    0:
+      MATERIAL: 'GOLDEN_CHESTPLATE'
+      SLOT: 32
+      AMOUNT: 1
+      NAME: "&4Daily Quests"
+      GLOW: false
+      LORE:
+        - '&fUnlock an additional daily quest'
+        - '&fto earn more rewards.'
+        - ''
+        - '&4Upgrade:'
+        - '&c&l ⛃ &fCost: &c%cost% %cost_currency%'
+        - '&c&l ↑ &fUpgrade: &c+%new_value% Quests'
+        - ''
+        - '&4Requirements:'
+        - '&c&l 📊 &fLevel: &c9'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'GOLDEN_CHESTPLATE'
+      SLOT: 32
+      AMOUNT: 1
+      NAME: "&4Daily Quests"
+      GLOW: false
+      LORE:
+        - '&fYour gang will now receive'
+        - '&c%value% &fdaily quests.'
+        - ''
+        - '&eYou have already unlocked this upgrade.'
+  WEEKLY_QUESTS:
+    0:
+      MATERIAL: 'DIAMOND_BOOTS'
+      SLOT: 34
+      AMOUNT: 1
+      NAME: "&6Weekly Quests"
+      GLOW: false
+      LORE:
+        - '&fUnlock an additional weekly quest'
+        - '&fto earn more rewards.'
+        - ''
+        - '&6Upgrade:'
+        - '&e&l ⛃ &fCost: &e%cost% %cost_currency%'
+        - '&e&l ↑ &fUpgrade: &e+%new_value% Quests'
+        - ''
+        - '&6Requirements:'
+        - '&e&l 📊 &fLevel: &e9'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'DIAMOND_BOOTS'
+      SLOT: 34
+      AMOUNT: 1
+      NAME: "&6Weekly Quests"
+      GLOW: false
+      LORE:
+        - '&fYour gang will now receive'
+        - '&e%value% &fweekly quests.'
+        - ''
+        - '&eYou have already unlocked this upgrade.'
+  CELL_EXPANSION:
+    0:
+      MATERIAL: 'IRON_BARS'
+      SLOT: 22
+      AMOUNT: 1
+      NAME: "&2Cell Expansion"
+      GLOW: false
+      LORE:
+        - '&fYour cell is currently expanded'
+        - '&fby &a%value% &fblocks.'
+        - ''
+        - '&2Upgrade:'
+        - '&a&l ⛃ &fCost: &a%cost% %cost_currency%'
+        - '&a&l ↑ &fUpgrade: &a%new_value% Blocks'
+        - ''
+        - '&eClick to purchase this upgrade'
+    1:
+      MATERIAL: 'IRON_BARS'
+      SLOT: 22
+      AMOUNT: 1
+      NAME: "&2Cell Expansion"
+      GLOW: false
+      LORE:
+        - '&fYour cell is currently expanded'
+        - '&fby &a%value% &fblocks.'
+        - ''
+        - '&2Upgrade:'
+        - '&a&l ⛃ &fCost: &a%cost% %cost_currency%'
+        - '&a&l ↑ &fUpgrade: &a%new_value% Blocks'
+        - ''
+        - '&eClick to purchase this upgrade'
+    2:
+      MATERIAL: 'IRON_BARS'
+      SLOT: 22
+      AMOUNT: 1
+      NAME: "&2Cell Expansion"
+      GLOW: false
+      LORE:
+        - '&fYour cell is currently expanded'
+        - '&fby &a%value% &fblocks.'
+        - ''
+        - '&2Upgrade:'
+        - '&a&l ⛃ &fCost: &a%cost% %cost_currency%'
+        - '&a&l ↑ &fUpgrade: &a%new_value% Blocks'
+        - ''
+        - '&eClick to purchase this upgrade'
+    3:
+      MATERIAL: 'IRON_BARS'
+      SLOT: 22
+      AMOUNT: 1
+      NAME: "&2Cell Expansion"
+      GLOW: false
+      LORE:
+        - '&fYour cell is currently expanded'
+        - '&fby &a%value% &fblocks.'
+        - ''
+        - '&aYou have reached the maximum expansion limit.'
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 40
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false

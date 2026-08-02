@@ -1,0 +1,148 @@
+ROWS: 4
+TITLE: "&8Gang Stats"
+ITEMS:
+  1:
+    SLOT: 10
+    MATERIAL: DIAMOND_PICKAXE
+    AMOUNT: 1
+    NAME: "&aBlocks Mined"
+    GLOW: true
+    STATISTIC: "blocksmined"
+    # You can also use the following placeholders:
+    # %1_blocksmined_roleicon% - This will show the role icon of the player with the most blocks mined
+    # %1_blocksmined_title - This will show the gang chat title of the player with the most blocks mined
+    LORE:
+      - ''
+      - '&fYour gang has mined a total of'
+      - '&e%statistic_formatted% &fblocks this season.'
+      - ''
+      - '&aTop Contributers:'
+      - '&e| &e&l#1 &f%1_blocksmined% &8- &e%1_blocksmined_amount_formatted% Blocks'
+      - '&7| &7&l#2 &f%2_blocksmined% &8- &e%2_blocksmined_amount_formatted% Blocks'
+      - '&6| &6&l#3 &f%3_blocksmined% &8- &e%3_blocksmined_amount_formatted% Blocks'
+  2:
+    SLOT: 11
+    MATERIAL: GRASS_BLOCK
+    AMOUNT: 1
+    NAME: "&aBlocks Placed"
+    GLOW: false
+    STATISTIC: "blocksplaced"
+    LORE:
+      - ''
+      - '&fYour gang has placed a total of'
+      - '&e%statistic_formatted% &fblocks this season.'
+      - ''
+      - '&aTop Contributers:'
+      - '&e| &e&l#1 &f%1_blocksplaced% &8- &e%1_blocksplaced_amount_formatted% Blocks'
+      - '&7| &7&l#2 &f%2_blocksplaced% &8- &e%2_blocksplaced_amount_formatted% Blocks'
+      - '&6| &6&l#3 &f%3_blocksplaced% &8- &e%3_blocksplaced_amount_formatted% Blocks'
+  3:
+    SLOT: 12
+    MATERIAL: IRON_SWORD
+    AMOUNT: 1
+    NAME: "&aPlayer Kills"
+    GLOW: false
+    STATISTIC: "kills"
+    LORE:
+      - ''
+      - '&fYour gang has killed a total of'
+      - '&e%statistic_formatted% &fplayers this season.'
+      - ''
+      - '&aTop Contributers:'
+      - '&e| &e&l#1 &f%1_kills% &8- &e%1_kills_amount_formatted% Kills'
+      - '&7| &7&l#2 &f%2_kills% &8- &e%2_kills_amount_formatted% Kills'
+      - '&6| &6&l#3 &f%3_kills% &8- &e%3_kills_amount_formatted% Kills'
+  4:
+    SLOT: 13
+    MATERIAL: ANVIL
+    AMOUNT: 1
+    NAME: "&aPlayer Deaths"
+    GLOW: false
+    STATISTIC: "deaths"
+    LORE:
+      - ''
+      - '&fYour gang has a total of'
+      - '&e%statistic_formatted% &fdeaths this season.'
+      - ''
+      - '&aTop Contributors:'
+      - '&e| &e&l#1 &f%1_deaths% &8- &e%1_deaths_amount_formatted% Deaths'
+      - '&7| &7&l#2 &f%2_deaths% &8- &e%2_deaths_amount_formatted% Deaths'
+      - '&6| &6&l#3 &f%3_deaths% &8- &e%3_deaths_amount_formatted% Deaths'
+  5:
+    SLOT: 14
+    MATERIAL: ROTTEN_FLESH
+    AMOUNT: 1
+    NAME: "&aMob Kills"
+    GLOW: false
+    STATISTIC: "mobkills"
+    LORE:
+      - ''
+      - '&fYour gang has killed a total of'
+      - '&e%statistic_formatted% &fmobs this season.'
+      - ''
+      - '&aTop Contributers:'
+      - '&e| &e&l#1 &f%1_mobkills% &8- &e%1_mobkills_amount_formatted% Mobs'
+      - '&7| &7&l#2 &f%2_mobkills% &8- &e%2_mobkills_amount_formatted% Mobs'
+      - '&6| &6&l#3 &f%3_mobkills% &8- &e%3_mobkills_amount_formatted% Mobs'
+  6:
+    SLOT: 15
+    MATERIAL: CAVE_SPIDER_SPAWN_EGG
+    AMOUNT: 1
+    NAME: "&aBoss Kills"
+    GLOW: false
+    STATISTIC: "bosskills"
+    LORE:
+      - ''
+      - '&fYour gang has killed a total of'
+      - '&e%statistic_formatted% &fbosses this season.'
+      - ''
+      - '&aTop Contributors:'
+      - '&e| &e&l#1 &f%1_bosskills% &8- &e%1_bosskills_amount_formatted% Bosses'
+      - '&7| &7&l#2 &f%2_bosskills% &8- &e%2_bosskills_amount_formatted% Bosses'
+      - '&6| &6&l#3 &f%3_bosskills% &8- &e%3_bosskills_amount_formatted% Bosses'
+  7:
+    SLOT: 16
+    MATERIAL: EMERALD
+    AMOUNT: 1
+    NAME: "&aGems Gained"
+    GLOW: false
+    STATISTIC: "currency_gained"
+    CURRENCY: "gems"
+    LORE:
+      - ''
+      - '&fYour gang has gained a total of'
+      - '&e%statistic_formatted_text% &fgems this season.'
+      - ''
+      - '&aTop Contributors:'
+      - '&e| &e&l#1 &f%1_gems% &8- &e%1_gems_amount_formatted_text% Gems'
+      - '&7| &7&l#2 &f%2_gems% &8- &e%2_gems_amount_formatted_text% Gems'
+      - '&6| &6&l#3 &f%3_gems% &8- &e%3_gems_amount_formatted_text% Gems'
+
+# Example of a custom statistic item
+#  8:
+#    SLOT: 17
+#    MATERIAL: DIAMOND_SHOVEL
+#    AMOUNT: 1
+#    NAME: "&aGuard Kills"
+#    GLOW: false
+#    STATISTIC: 'CUSTOM'
+#    CUSTOM_STATISTIC: 'guardkills'
+#    LORE:
+#      - ''
+#      - '&fYour gang has killed a total of'
+#      - '&e%statistic_formatted_text% &fguards this season.'
+#      - ''
+#      - '&aTop Contributors:'
+#      - '&e| &e&l#1 &f%1_guardkills% &8- &e%1_guardkills_amount_formatted% Guard Kills'
+#      - '&7| &7&l#2 &f%2_guardkills% &8- &e%2_guardkills_amount_formatted% Guard Kills'
+#      - '&6| &6&l#3 &f%3_guardkills% &8- &e%3_guardkills_amount_formatted% Guard Kills'
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 31
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false
+    CLICK_COMMANDS:
+      - 'msg %player% &cClosing gang stats menu...'

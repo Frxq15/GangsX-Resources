@@ -1,0 +1,26 @@
+ROWS: 3
+TITLE: "&8Gang Homes"
+ITEMS:
+  HOME:
+    MATERIAL: "RED_BED"
+    NAME: '&e%home%'
+    GLOW: false
+    LORE:
+      - ''
+      - '&b ➾ &fCreated By: &b%createdby%'
+      - ''
+      - '&bLocation:'
+      - '&b&l | &fWorld: &b%world%'
+      - '&b&l | &fX: &b%x%'
+      - '&b&l | &fY: &b%y%'
+      - '&b&l | &fZ: &b%z%'
+      - ''
+      - '&eClick to teleport to this location'
+MISC_ITEMS:
+  RETURN_GANG_MENU:
+    SLOT: 22
+    NAME: '&cExit'
+    MATERIAL: 'ARROW'
+    LORE: []
+    AMOUNT: 1
+    GLOW: false

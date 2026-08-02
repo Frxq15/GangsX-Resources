@@ -1,0 +1,65 @@
+ROWS: 5
+TITLE: "&8Top Cells"
+
+DISPLAY_AMOUNT: 14
+DISPLAY_SLOTS:
+  1: 10 # lb position : slot to be displayed
+  2: 11
+  3: 12
+  4: 13
+  5: 14
+  6: 15
+  7: 16
+  8: 19
+  9: 20
+  10: 21
+  11: 22
+  12: 23
+  13: 24
+  14: 25
+
+ITEMS:
+  TOP_FORMAT:
+    NAME: '&e&lGang &b%displayname%'
+    LORE:
+      - ''
+      - '&c&l ➾ &fPos. %cell_position%'
+      - '&c&l 👑 &fLeader: &c%leader%'
+      - ''
+      - '&d&l 💎 &fValue: &d%cell_value_formatted%'
+      - ''
+      - '&e&lClick &fto view their gang profile'
+  GANG_NOT_FOUND:
+    NAME: '&e&lGang &bN/A'
+    SKULL-TEXTURE: 'https://textures.minecraft.net/texture/badc048a7ce78f7dad72a07da27d85c0916881e5522eeed1e3daf217a38c1a'
+    LORE:
+      - ''
+      - '&c&l ➾ &fPos. %cell_position%'
+      - '&c&l 👑 &fLeader: &cN/A'
+      - ''
+      - '&d&l 💎 &fValue: &d0'
+      - ''
+      - '&eNo gang data found for this position.'
+MISC_ITEMS:
+  1:
+    SLOT: 39
+    MATERIAL: "WRITABLE_BOOK"
+    AMOUNT: 1
+    GLOW: false
+    NAME: '&a&lPlacement Rewards'
+    LORE:
+      - '&fEarn epic rewards by defeating the competition.'
+      - ''
+      - '&a&lCompetition Prizes:'
+      - '&e&l• &fPos. &e&l#1 &8&l➾ &e$100 Store Credit Coupon'
+      - '&e&l• &fPos. &7&l#2 &8&l➾ &e$60 Store Credit Coupon'
+      - '&e&l• &fPos. &6&l#3 &8&l➾ &e$35 Store Credit Coupon'
+      - ''
+      - '&ePayouts are given out at the end of the season.'
+  CLOSE_MENU:
+    SLOT: 41
+    GLOW: false
+    AMOUNT: 1
+    NAME: '&cExit'
+    LORE: []
+    MATERIAL: ARROW
